@@ -1,14 +1,121 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
 
-    <script src="js/script.js" defer></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>38СпецТех</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <!-- <link rel="manifest" href="manifest.webmanifest"> -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" crossorigin="anonymous"> -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <div class="main-header__wrapper">
+      <a class="main-header__logo" href="index.html">
+        <picture>
+          <source media="(min-width:1600px)" srcset="images/svg/logo.svg" width="123" height="67">
+          <source media="(min-width:768px)" srcset="images/svg/logo.svg" width="133" height="77">
+          <img src="images/svg/logo.svg" width="123" height="67" alt="Логотип 38СпецТех.">
+        </picture>
+      </a>
+      <p class="main-header__caption">Услуги грузового транспорта для всех</p>
+      <ul class="main-header__list">
+        <li class="main-header__item">
+          <svg class="main-header__link-icon" width="21" height="21">
+            <use xlink:href="images/icons/stack.svg#clock"></use>
+          </svg>
+          <span class="main-header__link-text">9:00-18:00</span>
+        </li>
+        <li class="main-header__item">
+          <svg class="main-header__link-icon" width="21" height="21">
+            <use xlink:href="images/icons/stack.svg#marker"></use>
+          </svg>
+          <address class="main-header__link-text">г. Иркутск,
+            м-н Радужный 12, офис 201</address>
+        </li>
+      </ul>
+      <a class="main-header__social-button" href="#">
+        <svg class="main-header__link-icon" width="30" height="29">
+          <use xlink:href="images/icons/stack.svg#whatsapp"></use>
+        </svg>
+        <span class="visually-hidden">WhatsApp</span>
+      </a>
+      <a class="main-header__social-button" href="#">
+        <svg class="main-header__link-icon" width="30" height="29">
+          <use xlink:href="images/icons/stack.svg#viber"></use>
+        </svg>
+        <span class="visually-hidden">Viber</span>
+      </a>
+      <div class="main-header__phone">
+        <svg class="main-header__link-icon" width="24" height="21">
+          <use xlink:href="images/icons/stack.svg#phone"></use>
+        </svg>
+        <span class="visually-hidden">Телефон</span>
+        <div class="main-header__phone">
+          <a href="tel:+79087773838">+7 (908) 777-38-38</a> Менеджер <br>
+          <a href="tel:+73952503838">+7 (3952) 50-38-38</a> Диспетчер <br>
+          <a href="tel:+790415965691">+7 (904) 159-65-69</a> Бухгалтерия <br>
+        </div>
+
+      </div>
+    </div>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#"><span class="main-nav__link-text">Каталог</span></a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#"><span class="main-nav__link-text">Услуги</span></a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#"><span class="main-nav__link-text">О компании</span></a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#"><span class="main-nav__link-text">Цены</span></a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#"><span class="main-nav__link-text">Контакты</span></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-index">
+    <section class="">
+      <div>
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev">
+            <button type="button"></button>
+          </div>
+          <div class="swiper-button-next">
+            <button class="" type="button"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+
+  <script src="js/script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
 </html>
