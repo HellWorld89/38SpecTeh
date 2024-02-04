@@ -2,19 +2,25 @@
 <html class="page" lang="ru">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="description" content="38СпецТех компания занимающаяся подбором спецтехники для любых задач в городе Иркутск и Иркутской области.">
+  <meta
+    name="keywords"
+    content="аренда спецтехники, аренда автовышки, аренда экскаватора-погрузчика, аренда кран-борта, аренда самосвала,
+    доставка ПГС, доставка Песка, доставка Щебня, благоустройство территории, вывоз мусора, доставка воды, земляные работы, "
+  >
   <title>38СпецТех</title>
-  <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="img/favicons/apple.png" />
   <!-- <link rel="manifest" href="manifest.webmanifest"> -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
   <!-- <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" crossorigin="anonymous"> -->
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
@@ -23,12 +29,15 @@
     <div class="main-header__wrapper">
       <a class="main-header__logo" href="index.html">
         <picture>
-          <source media="(min-width:1600px)" srcset="images/svg/logo.svg" width="123" height="67">
-          <source media="(min-width:768px)" srcset="images/svg/logo.svg" width="133" height="77">
-          <img src="images/svg/logo.svg" width="123" height="67" alt="Логотип 38СпецТех.">
+          <source media="(min-width:1600px)" srcset="images/svg/logo.svg" width="123" height="67" />
+          <source media="(min-width:768px)" srcset="images/svg/logo.svg" width="133" height="77" />
+          <img src="images/svg/logo.svg" width="123" height="67" alt="Логотип 38СпецТех." />
         </picture>
       </a>
       <p class="main-header__caption">Услуги грузового транспорта для всех</p>
+      <h1 class="visually-hidden">
+        Сайт 38Спецтех по аренде спецтехники в Иркутске
+      </h1>
       <ul class="main-header__list">
         <li class="main-header__item">
           <svg class="main-header__link-icon" width="21" height="21">
@@ -40,8 +49,9 @@
           <svg class="main-header__link-icon" width="21" height="21">
             <use xlink:href="images/icons/stack.svg#marker"></use>
           </svg>
-          <address class="main-header__link-text">г. Иркутск,
-            м-н Радужный 12, офис 201</address>
+          <address class="main-header__link-text">
+            г. Иркутск, м-н Радужный 12, офис 201
+          </address>
         </li>
       </ul>
       <a class="main-header__social-button" href="#">
@@ -62,11 +72,11 @@
         </svg>
         <span class="visually-hidden">Телефон</span>
         <div class="main-header__phone">
-          <a href="tel:+79087773838">+7 (908) 777-38-38</a> Менеджер <br>
-          <a href="tel:+73952503838">+7 (3952) 50-38-38</a> Диспетчер <br>
-          <a href="tel:+790415965691">+7 (904) 159-65-69</a> Бухгалтерия <br>
+          <a href="tel:+79087773838">+7 (908) 777-38-38</a> Менеджер <br />
+          <a href="tel:+73952503838">+7 (3952) 50-38-38</a> Диспетчер <br />
+          <a href="tel:+790415965691">+7 (904) 159-65-69</a> Бухгалтерия
+          <br />
         </div>
-
       </div>
     </div>
     <nav class="main-nav">
@@ -90,13 +100,25 @@
     </nav>
   </header>
   <main class="main-index">
-    <section class="">
-      <div>
+    <section class="main-slider">
+      <div class="main-slider__wrapper">
         <div class="swiper">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__inner">
+                <h2 class="swiper__title">
+                  Аренда спецтехники для любых задач в Иркутске
+                </h2>
+                <p class="swiper__text">
+                  Самосвалы, Экскаваторы, Автовышки, Краны в аренду для любых
+                  задач и грузов.
+                </p>
+                <button class="button" type="button">Заказать звонок</button>
+                <a class="button" href="#">Каталог техники</a>
+              </div>
+            </div>
             <div class="swiper-slide">Slide 2</div>
             <div class="swiper-slide">Slide 3</div>
             ...
@@ -111,8 +133,758 @@
         </div>
       </div>
     </section>
+    <section class="features">
+      <div class="features__box">
+        <h2 class="features__title">С нами надежно</h2>
+        <p class="features__text">
+          Компания 38СпецТех успешно работает на территории Иркутска и
+          Иркутской области с 2018 года. Мы занимаемся подбором и сдачей в
+          аренду различных видов спецтехники. Автовышки, КМУ, Экскаваторы,
+          Самосвалы и многое другое. Среди них есть модели любой
+          грузоподъемности, для погрузочных, монтажных, транспортировочных и
+          других работ. Обращение в компанию гарантирует комплексный подход к
+          решению поставленных задач. Получить больше информации можно у
+          менеджеров 38СпецТех.
+        </p>
+        <div class="features__wrapper">
+          <ul class="features__icon-list">
+            <li class="features__icon">
+              <svg class="features__link" width="80" height="80">
+                <use xlink:href="images/icons/stack.svg#timer"></use>
+              </svg>
+              <span class="visually-hidden">Часы.</span>
+              <span>Поставка техники точно в срок</span>
+            </li>
+            <li class="features__icon">
+              <svg class="features__link" width="80" height="80">
+                <use xlink:href="images/icons/stack.svg#tools"></use>
+              </svg>
+              <span class="visually-hidden">Инструменты.</span>
+              <span>Сопровождение спецтехники</span>
+            </li>
+            <li class="features__icon">
+              <svg class="features__link" width="80" height="80">
+                <use xlink:href="images/icons/stack.svg#engineer"></use>
+              </svg>
+              <span class="visually-hidden">Инжинер.</span>
+              <span>Квалифицированнные специалисты</span>
+            </li>
+            <li class="features__icon">
+              <svg class="features__link" width="80" height="80">
+                <use xlink:href="images/icons/stack.svg#equipment"></use>
+              </svg>
+              <span class="visually-hidden">Тяжелая техника.</span>
+              <span>Автопарк от ведущих мировых производителей</span>
+            </li>
+          </ul>
+        </div>
+        <button class="button" type="button">Заказать звонок</button>
+      </div>
+      <div class="promo">
+        <ul class="promo__list">
+          <li class="promo__item">
+            <p class="promo__number">10</p>
+            <p class="promo__text">лет на рынке</p>
+          </li>
+          <li class="promo__item">
+            <p class="promo__number">500+</p>
+            <p class="promo__text">выполненных проектов</p>
+          </li>
+          <li class="promo__item">
+            <p class="promo__number">25+</p>
+            <p class="promo__text">единиц техники всегда в наличии</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="services">
+      <div class="services__box">
+        <h2 class="services__title">
+          Аренда спецтехники от Автовышки до Ямобура
+        </h2>
+        <ul class="services__list">
+          <li class="services__item">
+            <picture>
+              <source media="(min-width: 1600px)" srcset="
+                    images/desktop1600/crane.jpg    1x,
+                    images/desktop1600/crane@2x.jpg 2x
+                  " />
+              <source media="(min-width: 768px)" srcset="
+                    images/desktop1600/crane.jpg    1x,
+                    images/desktop1600/crane@2x.jpg
+                  " />
+              <img src="images/desktop1600/crane.jpg" alt="" srcset="images/desktop1600/crane@2x.jpg" alt="Автокран"
+                width="219" height="177" />
+            </picture>
+            <a class="button" href="">Строительство</a>
+            <div class="services__link item">
+              <ul class="item__list">
+                <li class="item__item">
+                  <a href="catalog.html">Подъем рабочих</a>
+                </li>
+                <li class="item__item">
+                  <a href="catalog.html">Замена Баннеров</a>
+                </li>
+                <li class="item__item">
+                  <a href="catalog.html">Освещение</a>
+                </li>
+                <li class="item__item">
+                  <a href="catalog.html">Монтаж</a>
+                </li>
+                <li class="item__item">
+                  <a href="catalog.html">Ремонт Фасадов</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="services__item">
+            <picture>
+              <source media="(min-width: 1600px)" srcset="
+                    images/desktop1600/molot.jpg    1x,
+                    images/desktop1600/molot@2x.jpg 2x
+                  " />
+              <source media="(min-width: 768px)" srcset="
+                    images/desktop1600/molot.jpg    1x,
+                    images/desktop1600/molot@2x.jpg
+                  " />
+              <img src="images/desktop1600/molot.jpg" alt="" srcset="images/desktop1600/molot@2x.jpg" alt="Молот."
+                width="219" height="177" />
+            </picture>
+            <a class="button" href="">Монтаж / Демонтаж</a>
+            <div class="services__link item">
+              <ul class="item__list">
+                <li class="item__item">
+                  <a href="catalog.html">Демонтаж </a>
+                </li>
+                <li class="item__item">
+                  <a href="catalog.html">Бурение скважин</a>
+                </li>
+                <li class="item__item">
+                  <a href="catalog.html">Ограждение</a>
+                </li>
+                <li class="item__item">
+                  <a href="catalog.html">Столбы</a>
+                </li>
+                <li class="item__item">
+                  <a href="catalog.html">Фундамент</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="services__item">
+            <picture>
+              <source media="(min-width: 1600px)" srcset="
+                    images/desktop1600/katok.jpg    1x,
+                    images/desktop1600/katok@2x.jpg 2x
+                  " />
+              <source media="(min-width: 768px)" srcset="
+                    images/desktop1600/katok.jpg    1x,
+                    images/desktop1600/katok@2x.jpg
+                  " />
+              <img src="images/desktop1600/katok.jpg" alt="" srcset="images/desktop1600/katok@2x.jpg" alt="Каток."
+                width="219" height="177" />
+            </picture>
+            <a class="button" href="">Благоустройство</a>
+            <div class="services__link item">
+              <ul class="item__list">
+                <li class="item__item">
+                  <a href="catalog.html">Планировка</a>
+                </li>
+                <li class="item__item">
+                  <a href="catalog.html">Корчевание пней</a>
+                </li>
+                <li class="item__item">
+                  <a href="catalog.html">Уборка мусора</a>
+                </li>
+                <li class="item__item">
+                  <a href="catalog.html">Доставка воды</a>
+                </li>
+                <li class="item__item">
+                  <a href="catalog.html">Благоустройство</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="services__item">
+            <picture>
+              <source media="(min-width: 1600px)" srcset="
+                    images/desktop1600/furgon.jpg    1x,
+                    images/desktop1600/furgon@2x.jpg 2x
+                  " />
+              <source media="(min-width: 768px)" srcset="
+                    images/desktop1600/furgon.jpg    1x,
+                    images/desktop1600/furgon@2x.jpg
+                  " />
+              <img src="images/desktop1600/furgon.jpg" alt="" srcset="images/desktop1600/furgon@2x.jpg" alt="Фургон."
+                width="219" height="177" />
+            </picture>
+            <a class="button" href="">Грузоперевозки</a>
+            <div class="services__link item">
+              <ul class="item__list">
+                <li class="item__item">
+                  <a href="catalog.html">Быстрая доставка</a>
+                </li>
+                <li class="item__item">
+                  <a href="catalog.html">Переезд</a>
+                </li>
+                <li class="item__item">
+                  <a href="catalog.html">Рефрижератор</a>
+                </li>
+                <li class="item__item">
+                  <a href="catalog.html">Грузчики</a>
+                </li>
+                <li class="item__item">
+                  <a href="catalog.html">Любое расстояние</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="services__item">
+            <picture>
+              <source media="(min-width: 1600px)" srcset="
+                    images/desktop1600/truck.jpg    1x,
+                    images/desktop1600/truck@2x.jpg 2x
+                  " />
+              <source media="(min-width: 768px)" srcset="
+                    images/desktop1600/truck.jpg    1x,
+                    images/desktop1600/truck@2x.jpg
+                  " />
+              <img src="images/desktop1600/truck.jpg" alt="" srcset="images/desktop1600/truck@2x.jpg" alt="Самосвал."
+                width="219" height="177" />
+            </picture>
+            <a class="button" href="">Доставка грузов</a>
+            <div class="services__link item">
+              <ul class="item__list">
+                <li class="item__item">
+                  <a href="catalog.html">Песок</a>
+                </li>
+                <li class="item__item">
+                  <a href="catalog.html">ПГС</a>
+                </li>
+                <li class="item__item">
+                  <a href="catalog.html">Щебень</a>
+                </li>
+                <li class="item__item">
+                  <a href="catalog.html">Отсев</a>
+                </li>
+                <li class="item__item">
+                  <a href="catalog.html">Вывоз снега</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="services__item">
+            <picture>
+              <source media="(min-width: 1600px)" srcset="
+                    images/desktop1600/kmu.jpg    1x,
+                    images/desktop1600/kmu@2x.jpg 2x
+                  " />
+              <source media="(min-width: 768px)" srcset="
+                    images/desktop1600/kmu.jpg    1x,
+                    images/desktop1600/kmu@2x.jpg
+                  " />
+              <img src="images/desktop1600/kmu.jpg" alt="" srcset="images/desktop1600/kmu@2x.jpg"
+                alt="Кран манипулятор." width="219" height="177" />
+            </picture>
+            <a class="button" href="">Погрузка / Разгрузка</a>
+            <div class="services__link item">
+              <ul class="item__list">
+                <li class="item__item">
+                  <a href="catalog.html">Доставка Материала</a>
+                </li>
+                <li class="item__item">
+                  <a href="catalog.html">Подача материала</a>
+                </li>
+                <li class="item__item">
+                  <a href="catalog.html">Погрузка</a>
+                </li>
+                <li class="item__item">
+                  <a href="catalog.html">Разгрузка</a>
+                </li>
+                <li class="item__item"><a href="catalog.html">Монтаж</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="services__item">
+            <picture>
+              <source media="(min-width: 1600px)" srcset="
+                    images/desktop1600/excavator.jpg    1x,
+                    images/desktop1600/excavator@2x.jpg 2x
+                  " />
+              <source media="(min-width: 768px)" srcset="
+                    images/desktop1600/excavator.jpg    1x,
+                    images/desktop1600/excavator@2x.jpg
+                  " />
+              <img src="images/desktop1600/excavator.jpg" alt="" srcset="images/desktop1600/excavator@2x.jpg"
+                alt="Экскаватор-погрузчик." width="219" height="177" />
+            </picture>
+            <a class="button" href="">Земляные работы</a>
+            <div class="services__link item">
+              <ul class="item__list">
+                <li class="item__item">
+                  <a href="catalog.html">Выемка грунта</a>
+                </li>
+                <li class="item__item">
+                  <a href="catalog.html">Вывоз грунта</a>
+                </li>
+                <li class="item__item">
+                  <a href="catalog.html">Утрамбовка</a>
+                </li>
+                <li class="item__item">
+                  <a href="catalog.html">Септик</a>
+                </li>
+                <li class="item__item">
+                  <a href="catalog.html">Траншеи</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="services__item">
+            <picture>
+              <source media="(min-width: 1600px)" srcset="
+                    images/desktop1600/vishka.jpg    1x,
+                    images/desktop1600/vishka@2x.jpg 2x
+                  " />
+              <source media="(min-width: 768px)" srcset="
+                    images/desktop1600/vishka.jpg    1x,
+                    images/desktop1600/vishka@2x.jpg
+                  " />
+              <img src="images/desktop1600/vishka.jpg" alt="" srcset="images/desktop1600/vishka@2x.jpg" alt="Автовышка."
+                width="219" height="177" />
+            </picture>
+            <a class="button" href="">Высотные работы</a>
+            <div class="services__link item">
+              <ul class="item__list">
+                <li class="item__item">
+                  <a href="catalog.html">Подъем рабочих</a>
+                </li>
+                <li class="item__item">
+                  <a href="catalog.html">Замена Баннеров</a>
+                </li>
+                <li class="item__item">
+                  <a href="catalog.html">Освещение</a>
+                </li>
+                <li class="item__item">
+                  <a href="catalog.html">Монтаж</a>
+                </li>
+                <li class="item__item">
+                  <a href="catalog.html">Ремонт Фасадов</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="catalog">
+      <div class="catalog__box">
+        <h2 class="catalog__title">Каталог техники</h2>
+        <div class="swiper swiper2">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="card">
+                <a class="card__link" href="#">
+                  <picture>
+                    <source media="(min-width: 1600px)" srcset="
+                          images/desktop1600/crane.jpg    1x,
+                          images/desktop1600/crane@2x.jpg 2x
+                        " />
+                    <source media="(min-width: 768px)" srcset="
+                          images/desktop1600/crane.jpg    1x,
+                          images/desktop1600/crane@2x.jpg
+                        " />
+                    <img src="images/desktop1600/crane.jpg" alt="" srcset="images/desktop1600/crane@2x.jpg"
+                      alt="Автокран" width="219" height="177" />
+                  </picture>
+                </a>
+                <h3 class="card__title">Автокран</h3>
+                <table>
+                  <tr>
+                    <td>Длина стрелы:</td>
+                    <td>от 15м</td>
+                  </tr>
+                  <tr>
+                    <td>Грузоподъемность:</td>
+                    <td>от 10т</td>
+                  </tr>
+                </table>
+                <a class="card__link" href="#">Все характеристики</a>
+                <button class="button">Арендовать</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <a class="card__link" href="#">
+                  <picture>
+                    <source media="(min-width: 1600px)" srcset="
+                          images/desktop1600/molot.jpg    1x,
+                          images/desktop1600/molot@2x.jpg 2x
+                        " />
+                    <source media="(min-width: 768px)" srcset="
+                          images/desktop1600/molot.jpg    1x,
+                          images/desktop1600/molot@2x.jpg
+                        " />
+                    <img src="images/desktop1600/molot.jpg" alt="" srcset="images/desktop1600/molot@2x.jpg" alt="Молот."
+                      width="219" height="177" />
+                  </picture>
+                </a>
+                <h3 class="card__title">Гидромолот</h3>
+                <table>
+                  <tr>
+                    <td>Длина стрелы:</td>
+                    <td>от 15м</td>
+                  </tr>
+                  <tr>
+                    <td>Грузоподъемность:</td>
+                    <td>от 10т</td>
+                  </tr>
+                </table>
+                <a class="card__link" href="#">Все характеристики</a>
+                <button class="button">Арендовать</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <a class="card__link" href="#">
+                  <picture>
+                    <source media="(min-width: 1600px)" srcset="
+                          images/desktop1600/katok.jpg    1x,
+                          images/desktop1600/katok@2x.jpg 2x
+                        " />
+                    <source media="(min-width: 768px)" srcset="
+                          images/desktop1600/katok.jpg    1x,
+                          images/desktop1600/katok@2x.jpg
+                        " />
+                    <img src="images/desktop1600/katok.jpg" alt="" srcset="images/desktop1600/katok@2x.jpg" alt="Каток."
+                      width="219" height="177" />
+                  </picture>
+                </a>
+
+                <h3 class="card__title">Благоустройство</h3>
+                <table>
+                  <tr>
+                    <td>Длина стрелы:</td>
+                    <td>от 15м</td>
+                  </tr>
+                  <tr>
+                    <td>Грузоподъемность:</td>
+                    <td>от 10т</td>
+                  </tr>
+                </table>
+                <a class="card__link" href="#">Все характеристики</a>
+                <button class="button">Арендовать</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <a class="card__link" href="#">
+                  <picture>
+                    <source media="(min-width: 1600px)" srcset="
+                          images/desktop1600/furgon.jpg    1x,
+                          images/desktop1600/furgon@2x.jpg 2x
+                        " />
+                    <source media="(min-width: 768px)" srcset="
+                          images/desktop1600/furgon.jpg    1x,
+                          images/desktop1600/furgon@2x.jpg
+                        " />
+                    <img src="images/desktop1600/furgon.jpg" alt="" srcset="images/desktop1600/furgon@2x.jpg"
+                      alt="Фургон." width="219" height="177" />
+                  </picture>
+                </a>
+
+                <h3 class="card__title">Фургон</h3>
+                <table>
+                  <tr>
+                    <td>Длина стрелы:</td>
+                    <td>от 15м</td>
+                  </tr>
+                  <tr>
+                    <td>Грузоподъемность:</td>
+                    <td>от 10т</td>
+                  </tr>
+                </table>
+                <a class="card__link" href="#">Все характеристики</a>
+                <button class="button">Арендовать</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <a class="card__link" href="#">
+                  <picture>
+                    <source media="(min-width: 1600px)" srcset="
+                          images/desktop1600/truck.jpg    1x,
+                          images/desktop1600/truck@2x.jpg 2x
+                        " />
+                    <source media="(min-width: 768px)" srcset="
+                          images/desktop1600/truck.jpg    1x,
+                          images/desktop1600/truck@2x.jpg
+                        " />
+                    <img src="images/desktop1600/truck.jpg" alt="" srcset="images/desktop1600/truck@2x.jpg"
+                      alt="Самосвал." width="219" height="177" />
+                  </picture>
+                </a>
+
+                <h3 class="card__title">Самосвал</h3>
+                <table>
+                  <tr>
+                    <td>Длина стрелы:</td>
+                    <td>от 15м</td>
+                  </tr>
+                  <tr>
+                    <td>Грузоподъемность:</td>
+                    <td>от 10т</td>
+                  </tr>
+                </table>
+                <a class="card__link" href="#">Все характеристики</a>
+                <button class="button">Арендовать</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <a class="card__link" href="#">
+                  <picture>
+                    <source media="(min-width: 1600px)" srcset="
+                          images/desktop1600/kmu.jpg    1x,
+                          images/desktop1600/kmu@2x.jpg 2x
+                        " />
+                    <source media="(min-width: 768px)" srcset="
+                          images/desktop1600/kmu.jpg    1x,
+                          images/desktop1600/kmu@2x.jpg
+                        " />
+                    <img src="images/desktop1600/kmu.jpg" alt="" srcset="images/desktop1600/kmu@2x.jpg"
+                      alt="Кран манипулятор." width="219" height="177" />
+                  </picture>
+                </a>
+
+                <h3 class="card__title">КМУ</h3>
+                <table>
+                  <tr>
+                    <td>Длина стрелы:</td>
+                    <td>от 15м</td>
+                  </tr>
+                  <tr>
+                    <td>Грузоподъемность:</td>
+                    <td>от 10т</td>
+                  </tr>
+                </table>
+                <a class="card__link" href="#">Все характеристики</a>
+                <button class="button">Арендовать</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <a class="card__link" href="#">
+                  <picture>
+                    <source media="(min-width: 1600px)" srcset="
+                          images/desktop1600/excavator.jpg    1x,
+                          images/desktop1600/excavator@2x.jpg 2x
+                        " />
+                    <source media="(min-width: 768px)" srcset="
+                          images/desktop1600/excavator.jpg    1x,
+                          images/desktop1600/excavator@2x.jpg
+                        " />
+                    <img src="images/desktop1600/excavator.jpg" alt="" srcset="images/desktop1600/excavator@2x.jpg"
+                      alt="Экскаватор-погрузчик." width="219" height="177" />
+                  </picture>
+                </a>
+
+                <h3 class="card__title">Экскаватор-погрузчик</h3>
+                <table>
+                  <tr>
+                    <td>Длина стрелы:</td>
+                    <td>от 15м</td>
+                  </tr>
+                  <tr>
+                    <td>Грузоподъемность:</td>
+                    <td>от 10т</td>
+                  </tr>
+                </table>
+                <a class="card__link" href="#">Все характеристики</a>
+                <button class="button">Арендовать</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <a class="card__link" href="#">
+                  <picture>
+                    <source media="(min-width: 1600px)" srcset="
+                          images/desktop1600/vishka.jpg    1x,
+                          images/desktop1600/vishka@2x.jpg 2x
+                        " />
+                    <source media="(min-width: 768px)" srcset="
+                          images/desktop1600/vishka.jpg    1x,
+                          images/desktop1600/vishka@2x.jpg
+                        " />
+                    <img src="images/desktop1600/vishka.jpg" alt="" srcset="images/desktop1600/vishka@2x.jpg"
+                      alt="Автовышка." width="219" height="177" />
+                  </picture>
+                </a>
+
+                <h3 class="card__title">Автовышка</h3>
+                <table>
+                  <tr>
+                    <td>Длина стрелы:</td>
+                    <td>от 15м</td>
+                  </tr>
+                  <tr>
+                    <td>Грузоподъемность:</td>
+                    <td>от 10т</td>
+                  </tr>
+                </table>
+                <a class="card__link" href="#">Все характеристики</a>
+                <button class="button">Арендовать</button>
+              </div>
+            </div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <!-- <div class="swiper-pagination"></div> -->
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <a class="button" href="catalog.html">Перейти в каталог</a>
+        </div>
+    </section>
+    <section class="call">
+      <div class="call__box">
+        <div class="call__inner">
+          <h2 class="call__title"></h2>
+          <form action="#" method="get">
+            <p>
+              <label class="visually-hidden" for="name">Ваше имя</label>
+              <input type="text" name="name" id="name" placeholder="Ваше имя" required>
+            </p>
+            <p>
+              <label class="visually-hidden" for="phone">Ваш телефон*</label>
+              <input type="tel" name="phone" id="phone" placeholder="Ваш телефон*" required>
+            </p>
+            <button type="submit">Заказать звонок</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="map">
+      <div class="map__box">
+        <script type="text/javascript" charset="utf-8" async
+          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6391472fe28457c8e97c9e6e4c4d8e545c2fbe69fe044cb0ba95ed3d28a33be9&amp;width=100%25&amp;height=548&amp;lang=ru_RU&amp;scroll=true"></script>
+      </div>
+    </section>
   </main>
-  <footer></footer>
+  <footer class="main-footer">
+    <div class="main-footer__box">
+      <div class="main-footer__block1">
+        <a class="main-footer__logo" href="index.html">
+          <picture>
+            <source media="(min-width:1600px)" srcset="images/svg/logo.svg" width="123" height="67" />
+            <source media="(min-width:768px)" srcset="images/svg/logo.svg" width="133" height="77" />
+            <img src="images/svg/logo.svg" width="123" height="67" alt="Логотип 38СпецТех." />
+          </picture>
+        </a>
+        <span class="main-footer__text">Услуги грузового транспорта для всех</span>
+        <p class="main-footer__copyrigh">© 2000-2024 Все права защищены</p>
+      </div>
+    </div>
+    <nav class="footer-nav">
+      <h2 class="footer-nav__title">Клиентам</h2>
+      <ul class="footer-nav__list">
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="">О компании</a>
+        </li>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="">Услуги</a>
+        </li>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="">Каталог техники</a>
+        </li>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="">Наши работы</a>
+        </li>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="">Прайс-лист</a>
+        </li>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="footer-truck">
+      <h2 class="footer-truck__title">Техника</h2>
+      <ul class="footer-truck__list">
+        <li class="footer-truck__item">
+          <a class="footer-truck__link" href="">Экскаватор-погрузчик</a>
+        </li>
+        <li class="footer-truck__item">
+          <a class="footer-truck__link" href="">Автовышка</a>
+        </li>
+        <li class="footer-truck__item">
+          <a class="footer-truck__link" href="">КМУ</a>
+        </li>
+        <li class="footer-truck__item">
+          <a class="footer-truck__link" href="">Самосвал</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-services">
+      <h2 class="footer-services__title">Услуги</h2>
+      <ul class="footer-services__list">
+        <li class="footer-services__item">
+          <a class="footer-services__link" href="">Доставка грузов</a>
+        </li>
+        <li class="footer-services__item">
+          <a class="footer-services__link" href="">Гидромолот</a>
+        </li>
+        <li class="footer-services__item">
+          <a class="footer-services__link" href="">Благоустройство</a>
+        </li>
+        <li class="footer-services__item">
+          <a class="footer-services__link" href="">Перевозка груза</a>
+        </li>
+      </ul>
+    </div>
+    <div class="social">
+      <button class="button">Свяжитесь со мной</button>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="">
+            <svg class="social__link" width="24" height="24">
+              <use xlink:href="images/icons/stack.svg#whatsapp"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="">
+            <svg class="social__link" width="24" height="24">
+              <use xlink:href="images/icons/stack.svg#viber"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://vk.com/38specteh">
+            <svg class="social__link" width="24" height="24">
+              <use xlink:href="images/icons/stack.svg#vkontakte"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://yandex.ru/maps/org/spetstekh38/1162318791/?from=mapframe&ll=104.280903%2C52.231566&z=17">
+            <svg class="social__link" width="24" height="24">
+              <use xlink:href="images/icons/stack.svg#yandex"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="contacts">
+      <h2 class="contacts__title">Контакты</h2>
+      <a href="tel:+79087773838">+7 (908) 777-38-38</a> Менеджер <br />
+      <a href="tel:+73952503838">+7 (3952) 50-38-38</a> Диспетчер <br />
+      <a href="tel:+790415965691">+7 (904) 159-65-69</a> Бухгалтерия
+      <br />
+    </div>
+  </footer>
 
   <script src="js/script.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
