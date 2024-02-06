@@ -114,14 +114,14 @@
               <div class="swiper-slide__inner">
                 <div class="swiper-slide__inner-wrapper">
                   <div class="swiper-slide__inner-box">
-                    <h2 class="swiper__title">
+                    <h2 class="swiper__title fade-in">
                       Аренда спецтехники для<br> любых задач в Иркутске
                     </h2>
-                    <p class="swiper__text">
+                    <p class="swiper__text fade-in fade-in--two">
                       Самосвалы, Экскаваторы, Автовышки, Краны в<br> аренду для любых
                       задач и грузов.
                     </p>
-                    <div class="swiper__button-wrapper">
+                    <div class="swiper__button-wrapper fade-in--three">
                       <button class="button" type="button">Заказать звонок</button>
                       <a class="button button--white" href="#">Каталог техники</a>
                     </div>
@@ -136,10 +136,18 @@
           </div>
           <!-- If we need navigation buttons -->
           <div class="swiper-button-prev">
-            <button type="button"></button>
+            <button class="button button--prev" type="button">
+              <svg class="button__link-icon" width="10" height="17">
+                <use xlink:href="images/icons/stack.svg#prev"></use>
+              </svg>
+            </button>
           </div>
           <div class="swiper-button-next">
-            <button class="" type="button"></button>
+            <button class="button button--next" type="button">
+              <svg class="button__link-icon" width="10" height="17">
+                <use xlink:href="images/icons/stack.svg#next"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
@@ -147,52 +155,61 @@
     <section class="features">
       <div class="features__box">
         <h2 class="features__title">С нами надежно</h2>
-        <p class="features__text">
-          Компания 38СпецТех успешно работает на территории Иркутска и
-          Иркутской области с 2018 года. Мы занимаемся подбором и сдачей в
+        <div class="features__inner">
+          <div class="features__wrapper">
+            <p class="features__text">
+          Компания 38СпецТех успешно работает на территории Иркутска и <br>
+          Иркутской области с 2018 года.</p>
+          <p class="features__text"> Мы занимаемся подбором и сдачей в
           аренду различных видов спецтехники. Автовышки, КМУ, Экскаваторы,
-          Самосвалы и многое другое. Среди них есть модели любой
+          Самосвалы и многое другое.
+          </p>
+          <p class="features__text">Среди них есть модели любой
           грузоподъемности, для погрузочных, монтажных, транспортировочных и
-          других работ. Обращение в компанию гарантирует комплексный подход к
+          других работ.</p>
+          <p class="features__text">Обращение в компанию гарантирует комплексный подход к
           решению поставленных задач. Получить больше информации можно у
-          менеджеров 38СпецТех.
-        </p>
-        <div class="features__wrapper">
+          менеджеров 38СпецТех.</p></div>
+
+
+
           <ul class="features__icon-list">
             <li class="features__icon">
               <svg class="features__link" width="80" height="80">
                 <use xlink:href="images/icons/stack.svg#timer"></use>
               </svg>
               <span class="visually-hidden">Часы.</span>
-              <span>Поставка техники точно в срок</span>
+              <span>Поставка  техники<br> точно в срок</span>
             </li>
             <li class="features__icon">
               <svg class="features__link" width="80" height="80">
                 <use xlink:href="images/icons/stack.svg#tools"></use>
               </svg>
               <span class="visually-hidden">Инструменты.</span>
-              <span>Сопровождение спецтехники</span>
+              <span>Сопровождение <br>спецтехники</span>
             </li>
             <li class="features__icon">
               <svg class="features__link" width="80" height="80">
                 <use xlink:href="images/icons/stack.svg#engineer"></use>
               </svg>
               <span class="visually-hidden">Инжинер.</span>
-              <span>Квалифицированнные специалисты</span>
+              <span>Квалифицированнные <br> специалисты</span>
             </li>
             <li class="features__icon">
               <svg class="features__link" width="80" height="80">
                 <use xlink:href="images/icons/stack.svg#equipment"></use>
               </svg>
               <span class="visually-hidden">Тяжелая техника.</span>
-              <span>Автопарк от ведущих мировых производителей</span>
+              <span>Автопарк от ведущих <br>мировых производителей</span>
             </li>
           </ul>
         </div>
+
         <button class="button" type="button">Заказать звонок</button>
       </div>
       <div class="promo">
-        <ul class="promo__list">
+        <div class="promo__wrapper">
+          <ul class="promo__list">
           <li class="promo__item">
             <p class="promo__number">10</p>
             <p class="promo__text">лет на рынке</p>
@@ -205,7 +222,8 @@
             <p class="promo__number">25+</p>
             <p class="promo__text">единиц техники всегда в наличии</p>
           </li>
-        </ul>
+        </ul></div>
+
       </div>
     </section>
     <section class="services">
@@ -213,6 +231,12 @@
         <h2 class="services__title">
           Аренда спецтехники от Автовышки до Ямобура
         </h2>
+        <div class="services__logo">
+          <picture>
+          <source media="(min-width:1600px)" srcset="images/svg/logo.svg" width="353" height="207" />
+          <source media="(min-width:768px)" srcset="images/svg/logo.svg" width="133" height="77" />
+          <img src="images/svg/logo.svg" width="353" height="207" alt="Логотип 38СпецТех." />
+        </picture></div>
         <ul class="services__list">
           <li class="services__item">
             <picture>
@@ -754,7 +778,9 @@
           <!-- <div class="swiper-pagination"></div> -->
 
           <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-prev">
+
+          </div>
           <div class="swiper-button-next"></div>
           <a class="button" href="catalog.html">Перейти в каталог</a>
         </div>

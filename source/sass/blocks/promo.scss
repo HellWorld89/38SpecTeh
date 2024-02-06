@@ -1,0 +1,72 @@
+.promo {
+  width: 100%;
+}
+
+.promo__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 323px;
+  background-color: $base-black ;
+}
+
+.promo__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 1140px;
+}
+
+.promo__wrapper::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url(../../images/desktop1600/line.png);
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 50px;
+  top: 0;
+}
+
+.promo__wrapper::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url(../../images/desktop1600/line.png);
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 50px;
+  bottom: 0;
+}
+
+.promo__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 235px;
+  min-height: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+.promo__number {margin: 0;
+  padding: 0;
+  font-family: $PTSans-Bold;
+  font-size: 70px;
+  text-shadow:
+    -1px -1px 0 $base-orange,
+    1px -1px 0 $base-orange,
+    -1px 1px 0 $base-orange,
+    1px 1px 0 $base-orange;
+  color: $base-black;
+}
+
+.promo__text {
+  font-family: $montserrat-bold;
+  font-size: 18px;
+  color: $white-grey;
+}

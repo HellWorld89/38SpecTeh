@@ -1,0 +1,30 @@
+.fade-in {
+  opacity: 0; /* начальное значение непрозрачности */
+  animation: fadeIn ease-in 1; /* добавляем анимацию fadeIn */
+  animation-fill-mode: forwards; /* будет видимым после завершения анимации */
+  animation-duration: 2s; /* длительность анимации в 1 секунду */
+  // animation-iteration-count: infinite; /*количество повторов анимации
+  &--two {
+    opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  }
+  &--three {
+    opacity: 0;
+    animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+    animation-duration: 2s;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,81 @@
+.services {
+  width: 100%;
+}
+
+.services__box {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 1600px;
+  margin: 0 auto;
+  background-color: $base-blue-second;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.services__title {
+  margin: 0;
+  padding: 0;
+  font-family: $PTSans-Bold;
+  font-weight: 700;
+  font-size: 40px;
+  color: $white-grey;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.services__logo {
+  position: absolute;
+  top: 46%;
+  right: 37.7%;
+}
+
+.services__list {
+  list-style-type: none;
+  display: grid;
+  grid-template-areas:
+  ". . A . ."
+  ". B A C ."
+  "G B . C D"
+  "G F Y X D"
+  ". F Z X ."
+  ". . Z . .";
+  margin-left: 80px;
+}
+
+.services__item {
+  width: 219px;
+  min-height: 362px;
+  border-radius: 5% 5% 5% 5%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  grid-area: A;
+  text-align: start;
+}
+
+.services__item:nth-of-type(2) {
+  grid-area: C;
+}
+.services__item:nth-of-type(3) {
+  grid-area: D;
+}
+.services__item:nth-of-type(4) {
+  grid-area: X;
+}
+.services__item:nth-of-type(5) {
+  grid-area: Z;
+}
+.services__item:nth-of-type(6) {
+  grid-area: F;
+}
+.services__item:nth-of-type(7) {
+  grid-area: G;
+}
+.services__item:nth-of-type(8) {
+  grid-area: B;
+}
+
+.button {
+}
+
+.services__link {
+}
+

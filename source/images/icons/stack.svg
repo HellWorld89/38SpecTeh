@@ -108,6 +108,11 @@
 </clipPath>
 </defs>
 </symbol>
-
+<symbol id="next" width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.08838 1.16895L10.2497 9.69954L1.08838 18.2301" stroke="white" stroke-width="3"/>
+</symbol>
+<symbol id="prev" width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.9116 1.16895L2.75035 9.69954L11.9116 18.2301" stroke="white" stroke-width="3"/>
+</symbol>
 <symbol></symbol>
 </svg>

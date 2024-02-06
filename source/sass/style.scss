@@ -3,6 +3,7 @@
 @import "global/global";
 @import "global/fonts";
 @import "global/swiper";
+@import "global/fade-in";
 
 /* BLOCKS */
 @import "blocks/main-header";
@@ -12,3 +13,7 @@
 @import "blocks/main-index.scss";
 @import "blocks/main-slider.scss";
 @import "blocks/button.scss";
+@import "blocks/features.scss";
+@import "blocks/promo.scss";
+@import "blocks/services.scss";
+@import "blocks/item.scss";

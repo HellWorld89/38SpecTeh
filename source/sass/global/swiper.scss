@@ -1,6 +1,7 @@
 .swiper {
   width: 1600px;
-  height: 300px;
+  min-height: 592px;
+  margin: 0 auto;
 }
 
 .swiper-button-prev,
@@ -19,4 +20,90 @@
 
 .swiper т.swiper-button-next:after {
   content: none;
+}
+
+.swiper {}
+
+.swiper-wrapper {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.swiper-slide {}
+
+.swiper-slide__inner {
+  background-image: url(../../images/desktop1600/banner1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.swiper-slide__inner-wrapper {
+  width: 762px;
+  height: 592px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.swiper-slide__inner-box {
+  width: 770px;
+  min-height: 592px;
+  display: flex;
+  flex-direction: column;
+  padding: 129px 100px 129px 126px;
+
+}
+
+.swiper__title::before {
+  content: "";
+  display: block;
+  width: 264px;
+  height: 5px;
+  border: #FCB427 solid;
+  margin-bottom: 20px;
+}
+
+.swiper__title {
+  margin: 0;
+  padding: 0;
+  font-family: $PTSans-Bold;
+  font-weight: 700;
+  font-size: 44px;
+  color: #2d2d2d;
+  margin-bottom: 30px;
+  text-shadow: 2px 7px 5px rgba(0,0,0,0.3),
+    0px -4px 10px rgba(255,255,255,0.3);
+}
+
+.swiper__text {
+  margin: 0;
+  padding: 0;
+  font-family: $montserrat-regular;
+  font-weight: 400;
+  font-size: 16px;
+  color: #2d2d2d;
+  margin-bottom: 30px;
+  text-shadow: 2px 7px 5px rgba(0,0,0,0.3),
+    0px -4px 10px rgba(255,255,255,0.3);
+}
+
+.swiper__button-wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+div .swiper-button-prev::after {
+  content: none;
+
+}
+
+div .swiper-button-next::after {
+  content: none;
+}
+
+div.swiper-button-next svg,
+div.swiper-button-prev svg {
+  width: 10px;
+  height: 17px;
+  object-fit: contain;
+  transform-origin: center
 }
