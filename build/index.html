@@ -3,12 +3,11 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="38СпецТех компания занимающаяся подбором спецтехники для любых задач в городе Иркутск и Иркутской области.">
-  <meta
-    name="keywords"
+  <meta name="description"
+    content="38СпецТех компания занимающаяся подбором спецтехники для любых задач в городе Иркутск и Иркутской области.">
+  <meta name="keywords"
     content="аренда спецтехники, аренда автовышки, аренда экскаватора-погрузчика, аренда кран-борта, аренда самосвала,
-    доставка ПГС, доставка Песка, доставка Щебня, благоустройство территории, вывоз мусора, доставка воды, земляные работы, "
-  >
+    доставка ПГС, доставка Песка, доставка Щебня, благоустройство территории, вывоз мусора, доставка воды, земляные работы, ">
   <title>38СпецТех</title>
   <link rel="icon" href="favicon.ico" />
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml" />
@@ -27,17 +26,19 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo" href="index.html">
-        <picture>
-          <source media="(min-width:1600px)" srcset="images/svg/logo.svg" width="123" height="67" />
-          <source media="(min-width:768px)" srcset="images/svg/logo.svg" width="133" height="77" />
-          <img src="images/svg/logo.svg" width="123" height="67" alt="Логотип 38СпецТех." />
-        </picture>
-      </a>
-      <p class="main-header__caption">Услуги грузового транспорта для всех</p>
-      <h1 class="visually-hidden">
-        Сайт 38Спецтех по аренде спецтехники в Иркутске
-      </h1>
+      <div class="main-header__logo-block"><a class="main-header__logo" href="index.html">
+          <picture>
+            <source media="(min-width:1600px)" srcset="images/svg/logo.svg" width="123" height="67" />
+            <source media="(min-width:768px)" srcset="images/svg/logo.svg" width="133" height="77" />
+            <img src="images/svg/logo.svg" width="123" height="67" alt="Логотип 38СпецТех." />
+          </picture>
+        </a>
+        <p class="main-header__caption">Услуги грузового<br> транспорта для всех</p>
+        <h1 class="visually-hidden">
+          Сайт 38Спецтех по аренде спецтехники в Иркутске
+        </h1>
+      </div>
+
       <ul class="main-header__list">
         <li class="main-header__item">
           <svg class="main-header__link-icon" width="21" height="21">
@@ -49,34 +50,37 @@
           <svg class="main-header__link-icon" width="21" height="21">
             <use xlink:href="images/icons/stack.svg#marker"></use>
           </svg>
-          <address class="main-header__link-text">
-            г. Иркутск, м-н Радужный 12, офис 201
-          </address>
+          <p class="main-header__link-text">
+            г. Иркутск,<br> м-н Радужный 12, офис 201
+          </p>
         </li>
       </ul>
-      <a class="main-header__social-button" href="#">
-        <svg class="main-header__link-icon" width="30" height="29">
-          <use xlink:href="images/icons/stack.svg#whatsapp"></use>
-        </svg>
-        <span class="visually-hidden">WhatsApp</span>
-      </a>
-      <a class="main-header__social-button" href="#">
-        <svg class="main-header__link-icon" width="30" height="29">
-          <use xlink:href="images/icons/stack.svg#viber"></use>
-        </svg>
-        <span class="visually-hidden">Viber</span>
-      </a>
+      <div class="main-header__social">
+        <a class="main-header__social-button" href="#">
+          <svg class="main-header__link-icon" width="30" height="29">
+            <use xlink:href="images/icons/stack.svg#whatsapp"></use>
+          </svg>
+          <span class="visually-hidden">WhatsApp</span>
+        </a>
+        <a class="main-header__social-button" href="#">
+          <svg class="main-header__link-icon" width="30" height="30">
+            <use xlink:href="images/icons/stack.svg#viber"></use>
+          </svg>
+          <span class="visually-hidden">Viber</span>
+        </a>
+      </div>
+
       <div class="main-header__phone">
-        <svg class="main-header__link-icon" width="24" height="21">
+        <svg class="main-header__link-icon" width="25" height="25">
           <use xlink:href="images/icons/stack.svg#phone"></use>
         </svg>
         <span class="visually-hidden">Телефон</span>
-        <div class="main-header__phone">
+        <address class="main-header__phone-block">
           <a href="tel:+79087773838">+7 (908) 777-38-38</a> Менеджер <br />
           <a href="tel:+73952503838">+7 (3952) 50-38-38</a> Диспетчер <br />
           <a href="tel:+790415965691">+7 (904) 159-65-69</a> Бухгалтерия
           <br />
-        </div>
+        </address>
       </div>
     </div>
     <nav class="main-nav">
@@ -108,15 +112,22 @@
             <!-- Slides -->
             <div class="swiper-slide">
               <div class="swiper-slide__inner">
-                <h2 class="swiper__title">
-                  Аренда спецтехники для любых задач в Иркутске
-                </h2>
-                <p class="swiper__text">
-                  Самосвалы, Экскаваторы, Автовышки, Краны в аренду для любых
-                  задач и грузов.
-                </p>
-                <button class="button" type="button">Заказать звонок</button>
-                <a class="button" href="#">Каталог техники</a>
+                <div class="swiper-slide__inner-wrapper">
+                  <div class="swiper-slide__inner-box">
+                    <h2 class="swiper__title">
+                      Аренда спецтехники для<br> любых задач в Иркутске
+                    </h2>
+                    <p class="swiper__text">
+                      Самосвалы, Экскаваторы, Автовышки, Краны в<br> аренду для любых
+                      задач и грузов.
+                    </p>
+                    <div class="swiper__button-wrapper">
+                      <button class="button" type="button">Заказать звонок</button>
+                      <a class="button button--white" href="#">Каталог техники</a>
+                    </div>
+                  </div>
+
+                </div>
               </div>
             </div>
             <div class="swiper-slide">Slide 2</div>
@@ -206,14 +217,14 @@
           <li class="services__item">
             <picture>
               <source media="(min-width: 1600px)" srcset="
-                    images/desktop1600/crane.jpg    1x,
-                    images/desktop1600/crane@2x.jpg 2x
+                    images/desktop1600/crane.png    1x,
+                    images/desktop1600/crane@2x.png  2x
                   " />
               <source media="(min-width: 768px)" srcset="
-                    images/desktop1600/crane.jpg    1x,
-                    images/desktop1600/crane@2x.jpg
+                    images/desktop1600/crane.png     1x,
+                    images/desktop1600/crane@2x.png
                   " />
-              <img src="images/desktop1600/crane.jpg" alt="" srcset="images/desktop1600/crane@2x.jpg" alt="Автокран"
+              <img src="images/desktop1600/crane.png " alt="" srcset="images/desktop1600/crane@2x.png " alt="Автокран"
                 width="219" height="177" />
             </picture>
             <a class="button" href="">Строительство</a>
@@ -240,14 +251,14 @@
           <li class="services__item">
             <picture>
               <source media="(min-width: 1600px)" srcset="
-                    images/desktop1600/molot.jpg    1x,
-                    images/desktop1600/molot@2x.jpg 2x
+                    images/desktop1600/molot.png    1x,
+                    images/desktop1600/molot@2x.png  2x
                   " />
               <source media="(min-width: 768px)" srcset="
-                    images/desktop1600/molot.jpg    1x,
-                    images/desktop1600/molot@2x.jpg
+                    images/desktop1600/molot.png     1x,
+                    images/desktop1600/molot@2x.png
                   " />
-              <img src="images/desktop1600/molot.jpg" alt="" srcset="images/desktop1600/molot@2x.jpg" alt="Молот."
+              <img src="images/desktop1600/molot.png " alt="" srcset="images/desktop1600/molot@2x.png " alt="Молот."
                 width="219" height="177" />
             </picture>
             <a class="button" href="">Монтаж / Демонтаж</a>
@@ -274,14 +285,14 @@
           <li class="services__item">
             <picture>
               <source media="(min-width: 1600px)" srcset="
-                    images/desktop1600/katok.jpg    1x,
-                    images/desktop1600/katok@2x.jpg 2x
+                    images/desktop1600/katok.png     1x,
+                    images/desktop1600/katok@2x.png  2x
                   " />
               <source media="(min-width: 768px)" srcset="
-                    images/desktop1600/katok.jpg    1x,
-                    images/desktop1600/katok@2x.jpg
+                    images/desktop1600/katok.png     1x,
+                    images/desktop1600/katok@2x.png
                   " />
-              <img src="images/desktop1600/katok.jpg" alt="" srcset="images/desktop1600/katok@2x.jpg" alt="Каток."
+              <img src="images/desktop1600/katok.png " alt="" srcset="images/desktop1600/katok@2x.png " alt="Каток."
                 width="219" height="177" />
             </picture>
             <a class="button" href="">Благоустройство</a>
@@ -308,14 +319,14 @@
           <li class="services__item">
             <picture>
               <source media="(min-width: 1600px)" srcset="
-                    images/desktop1600/furgon.jpg    1x,
-                    images/desktop1600/furgon@2x.jpg 2x
+                    images/desktop1600/furgon.png    1x,
+                    images/desktop1600/furgon@2x.png  2x
                   " />
               <source media="(min-width: 768px)" srcset="
-                    images/desktop1600/furgon.jpg    1x,
-                    images/desktop1600/furgon@2x.jpg
+                    images/desktop1600/furgon.png     1x,
+                    images/desktop1600/furgon@2x.png
                   " />
-              <img src="images/desktop1600/furgon.jpg" alt="" srcset="images/desktop1600/furgon@2x.jpg" alt="Фургон."
+              <img src="images/desktop1600/furgon.png " alt="" srcset="images/desktop1600/furgon@2x.png " alt="Фургон."
                 width="219" height="177" />
             </picture>
             <a class="button" href="">Грузоперевозки</a>
@@ -342,14 +353,14 @@
           <li class="services__item">
             <picture>
               <source media="(min-width: 1600px)" srcset="
-                    images/desktop1600/truck.jpg    1x,
-                    images/desktop1600/truck@2x.jpg 2x
+                    images/desktop1600/truck.png     1x,
+                    images/desktop1600/truck@2x.png  2x
                   " />
               <source media="(min-width: 768px)" srcset="
-                    images/desktop1600/truck.jpg    1x,
-                    images/desktop1600/truck@2x.jpg
+                    images/desktop1600/truck.png     1x,
+                    images/desktop1600/truck@2x.png
                   " />
-              <img src="images/desktop1600/truck.jpg" alt="" srcset="images/desktop1600/truck@2x.jpg" alt="Самосвал."
+              <img src="images/desktop1600/truck.png" alt="" srcset="images/desktop1600/truck@2x.png" alt="Самосвал."
                 width="219" height="177" />
             </picture>
             <a class="button" href="">Доставка грузов</a>
@@ -376,14 +387,14 @@
           <li class="services__item">
             <picture>
               <source media="(min-width: 1600px)" srcset="
-                    images/desktop1600/kmu.jpg    1x,
-                    images/desktop1600/kmu@2x.jpg 2x
+                    images/desktop1600/kmu.png     1x,
+                    images/desktop1600/kmu@2x.png  2x
                   " />
               <source media="(min-width: 768px)" srcset="
-                    images/desktop1600/kmu.jpg    1x,
-                    images/desktop1600/kmu@2x.jpg
+                    images/desktop1600/kmu.png     1x,
+                    images/desktop1600/kmu@2x.png
                   " />
-              <img src="images/desktop1600/kmu.jpg" alt="" srcset="images/desktop1600/kmu@2x.jpg"
+              <img src="images/desktop1600/kmu.png " alt="" srcset="images/desktop1600/kmu@2x.png "
                 alt="Кран манипулятор." width="219" height="177" />
             </picture>
             <a class="button" href="">Погрузка / Разгрузка</a>
@@ -408,14 +419,14 @@
           <li class="services__item">
             <picture>
               <source media="(min-width: 1600px)" srcset="
-                    images/desktop1600/excavator.jpg    1x,
-                    images/desktop1600/excavator@2x.jpg 2x
+                    images/desktop1600/excavator.png     1x,
+                    images/desktop1600/excavator@2x.png  2x
                   " />
               <source media="(min-width: 768px)" srcset="
-                    images/desktop1600/excavator.jpg    1x,
-                    images/desktop1600/excavator@2x.jpg
+                    images/desktop1600/excavator.png     1x,
+                    images/desktop1600/excavator@2x.png
                   " />
-              <img src="images/desktop1600/excavator.jpg" alt="" srcset="images/desktop1600/excavator@2x.jpg"
+              <img src="images/desktop1600/excavator.png" alt="" srcset="images/desktop1600/excavator@2x.png"
                 alt="Экскаватор-погрузчик." width="219" height="177" />
             </picture>
             <a class="button" href="">Земляные работы</a>
@@ -442,15 +453,15 @@
           <li class="services__item">
             <picture>
               <source media="(min-width: 1600px)" srcset="
-                    images/desktop1600/vishka.jpg    1x,
-                    images/desktop1600/vishka@2x.jpg 2x
+                    images/desktop1600/vishka.png    1x,
+                    images/desktop1600/vishka@2x.png  2x
                   " />
               <source media="(min-width: 768px)" srcset="
-                    images/desktop1600/vishka.jpg    1x,
-                    images/desktop1600/vishka@2x.jpg
+                    images/desktop1600/vishka.png     1x,
+                    images/desktop1600/vishka@2x.png
                   " />
-              <img src="images/desktop1600/vishka.jpg" alt="" srcset="images/desktop1600/vishka@2x.jpg" alt="Автовышка."
-                width="219" height="177" />
+              <img src="images/desktop1600/vishka.png " alt="" srcset="images/desktop1600/vishka@2x.png "
+                alt="Автовышка." width="219" height="177" />
             </picture>
             <a class="button" href="">Высотные работы</a>
             <div class="services__link item">
@@ -869,7 +880,8 @@
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://yandex.ru/maps/org/spetstekh38/1162318791/?from=mapframe&ll=104.280903%2C52.231566&z=17">
+          <a class="social__link"
+            href="https://yandex.ru/maps/org/spetstekh38/1162318791/?from=mapframe&ll=104.280903%2C52.231566&z=17">
             <svg class="social__link" width="24" height="24">
               <use xlink:href="images/icons/stack.svg#yandex"></use>
             </svg>
