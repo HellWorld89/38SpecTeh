@@ -18,17 +18,20 @@
   background-position: center;
 }
 
-.swiper т.swiper-button-next:after {
+.swiper .swiper-button-next:after {
   content: none;
 }
 
 .swiper {}
 
 .swiper-wrapper {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+width: 1600px;
+margin: 0 auto;
 }
 
-.swiper-slide {}
+.swiper-slide {
+
+}
 
 .swiper-slide__inner {
   background-image: url(../../images/desktop1600/banner1.jpg);
