@@ -47,6 +47,16 @@ margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
+.swiper-slider__box {
+  display: flex;
+  position: relative;
+}
+
+.swiper-button__box{
+  display: flex;
+
+}
+
 .swiper-slide__inner-box {
   width: 770px;
   min-height: 592px;

@@ -2,7 +2,8 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
-  loop: true,
+  loop: false,
+  slidesPerView: 1,
   watchSlidesVisibility: true,
   watchSlidesProgress: true,
 
@@ -26,9 +27,9 @@ const swiper = new Swiper('.swiper', {
 const swiper1 = new Swiper('.swiper2', {
   // Optional parameters
   direction: 'horizontal',
-  slidesPerView: 4,
-  spaceBetween: 37,
-  loop: true,
+  slidesPerView: 1,
+  // spaceBetween: 10,
+  loop: false,
   watchSlidesVisibility: true,
   watchSlidesProgress: true,
 

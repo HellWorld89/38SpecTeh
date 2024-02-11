@@ -4,7 +4,11 @@
   background-color: $white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   position: relative;
+  margin-right: 30px;
 }
+// .card:nth-last-of-type(4) {
+//   margin-right: 0;
+// }
 
 .card::after {
 content: "";
