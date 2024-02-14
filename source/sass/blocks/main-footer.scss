@@ -1,4 +1,77 @@
 .main-footer {
+  display: flex;
   background-color: #2A385B;
   color: $white;
+  width: 100%;
+}
+
+.main-footer__box {
+  width: 1600px;
+  min-height: 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 20px 60px 100px;
+}
+
+.main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.main-footer__logo {
+  margin-bottom: 15px;
+}
+
+.main-footer__text {
+  font-family: $montserrat-regular;
+  font-size: 12px;
+  color: $white;
+}
+
+.main-footer__copyrigh {
+  font-family: $montserrat-regular;
+  font-size: 10px;
+  color: $white-grey;
+}
+
+.main-footer__nav {
+}
+.main-footer__title {
+  margin: 0;
+  padding: 0;
+  font-family: $Roboto-medium;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+.main-footer__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  font-family: $montserrat-regular;
+  font-size: 12px;
+  color: $white-grey;
+}
+.main-footer__item {
+  margin-bottom: 7px;
+}
+
+.main-footer__truck {
+}
+.main-footer__social-list {
+  display: flex;
+  list-style-type: none;
+}
+.main-footer__social-item {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+.main-footer__social-link {
+
+}
+.main-footer__contacts {
+}
+.main-footer__contacts-title {
 }

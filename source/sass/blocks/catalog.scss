@@ -2,11 +2,13 @@
   width: 100%;
 }
 .catalog__box {
-  width: 100%;
+  width: 1600px;
   margin: 0 auto;
   background-color: $base-blue-second;
   padding-top: 20px;
   padding-bottom: 189px;
+  padding: 36px 10px 100px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .catalog__title {
   margin: 0;
@@ -15,7 +17,7 @@
   font-weight: 700;
   font-size: 40px;
   color: $white-grey;
-  padding-left: 126px;
-  margin-bottom: 30px;
+  padding-left: 100px;
+  margin-bottom: 70px;
   // text-align: center;
 }
