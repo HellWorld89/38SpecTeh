@@ -1,87 +1,293 @@
 .main-header {
-  background-color: $base-blue;
-  color: $white;
-  font-family: $montserrat-regular;
-  font-size: 14px;
-  line-height: 16px;
-  padding: 0 0 2px;
-  width: 100%;
+  @include vp-1600 {
+    background-color: $base-blue;
+    color: $white;
+    font-family: $montserrat-regular;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 0 0 2px;
+    width: 100%;
+    top: 0;
+    width: 100%;
+  }
 
-  @media (min-width: $tablet-width) {
-    padding: 0;
+
+  @include vp-1599 {
+    background-color: $base-blue;
+    color: $white;
+    font-family: $montserrat-regular;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 0 0 2px;
+    width: 100%;
+    top: 0;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 4;
+  }
+
+  @include vp-767 {
+    background-color: $base-blue;
+    color: $white;
+    font-family: $montserrat-regular;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 0 0 2px;
+    width: 100%;
+    top: 0;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 4;
   }
 }
 
 .main-header__wrapper {
-  display: flex;
-  margin: 0 auto;
-  width: 1600px;
-  justify-content: space-between;
-  align-items: center;
+  @include vp-1600 {
+    display: flex;
+    margin: 0 auto;
+    width: $desktop-width;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  @include vp-1599 {
+    display: flex;
+    width: $tablet-width;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    width: $mobile-width;
+    padding: 10px;
+  }
 }
 
 .main-header__logo-block {
-  display: flex;
-  align-items: center;
+  @include vp-1600 {
+    display: flex;
+    align-items: center;
+  }
+
+  @include vp-1599 {
+    display: flex;
+    align-items: center;
+  }
+
+  @include vp-767 {}
+
 }
 
+
 .main-header__logo {
-  padding-top: 14px;
-  padding-left: 133px;
-  padding-bottom: 14px;
+  @include vp-1600 {
+    padding-top: 14px;
+    padding-left: 133px;
+    padding-bottom: 14px;
+
+  }
+
+  @include vp-1599 {
+    padding-top: 16px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+
+  @include vp-767 {}
 }
 
 .main-header__caption {
-  margin: 0;
-  font-family: $montserrat-regular;
-  font-weight: 400;
-  line-height: 142.19%;
-  margin-left: 77px;
+  @include vp-1600 {
+    margin: 0;
+    font-family: $montserrat-regular;
+    font-weight: 400;
+    line-height: 142.19%;
+    margin-left: 77px;
+  }
+
+
+  @include vp-1599 {
+    margin: 0;
+    font-family: $montserrat-regular;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 142.19%;
+    margin-left: 21px;
+  }
+
+  @include vp-767 {}
+
+
 }
 
-.visually-hidden {}
+.main-header__box {
+  background-color: $base-blue;
+}
 
 .main-header__list {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  text-decoration: none;
-  list-style-type: none;
-  justify-content: space-between;
-  align-items: baseline;
-  width: 370px;
+  @include vp-1600 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 370px;
+  }
+
+
+  @include vp-1599 {
+    display: none;
+  }
+
+  @include vp-767 {}
+
+
 }
 
 .main-header__item {
-  display: flex;
+  @include vp-1600 {
+    display: flex;
+  }
+
+
+  @include vp-1599 {}
+
+  @include vp-767 {}
+
+
 }
 
-.main-header__link-icon {}
-
 .main-header__link-text {
-  margin: 0;
-  margin-left: 10px;
+  @include vp-1600 {
+    margin: 0;
+    margin-left: 10px;
+  }
+
+
+  @include vp-1599 {}
+
+  @include vp-767 {}
+
+
 }
 
 .main-header__social {
+  @include vp-1600 {}
+
+
+  @include vp-1599 {
+    display: none;
+  }
+
+  @include vp-767 {}
+
+}
+
+.main-header__social-list {
   display: flex;
-  width: 150px;
-  justify-content: space-around;
+  width: 300px;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.main-header__social-item fa-whatsapp {
+  list-style: none;
+  margin: 0 15px;
+  margin-right: 10px;
 }
 
 .main-header__social-button {
-  display: block;
-  width: 30px;
-  height: 30px;
+  @include vp-1600 {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 42px;
+    background: $base-blue;
+    border-radius: 10%;
+    font-size: 20px;
+    color: $white-grey;
+    transition: .5s;
+  }
+
+  @include vp-1599 {}
+
+  @include vp-767 {}
+}
+
+.main-header__social-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: $base-orange;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+.main-header__social-button:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px $base-orange;
+}
+
+.main-header__social-button:hover {
+  color: $base-orange;
+  box-shadow: 0 0 5px $base-orange;
+  text-shadow: 0 0 5px $base-orange;
 }
 
 .main-header__phone {
-  display: flex;
-  align-items: center;
+  @include vp-1600 {
+    display: flex;
+    align-items: center;
+    margin-right: 177px;
+  }
+
+
+  @include vp-1599 {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  @include vp-767 {
+    margin: 0 auto;
+  }
+
+
 }
 
 .main-header__phone-block {
-  font-style: normal;
-  margin-left: 10px;
-  margin-right: 177px;
+  @include vp-1600 {
+    font-style: normal;
+    margin-left: 10px;
+  }
+
+
+  @include vp-1599 {
+    font-style: normal;
+    margin-left: 10px;
+  }
+
+  @include vp-767 {}
+
 }
+
+// @include vp-1600 {}
+// @include vp-1599 {}
+// @include vp-767 {}

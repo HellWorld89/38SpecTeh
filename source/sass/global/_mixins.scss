@@ -1,0 +1,23 @@
+@mixin vp-1600 {
+  @media (min-width: ($desktop-width)) {
+    @content;
+  }
+}
+
+@mixin vp-1599 {
+  @media (max-width: ($desktop-width - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-767 {
+  @media (max-width: ($tablet-width - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-319 {
+  @media (max-width: ($mobile-width - 1px)) {
+    @content;
+  }
+}

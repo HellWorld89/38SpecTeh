@@ -1,4 +1,14 @@
 .services {
+  @include vp-1600 {
+  display: block;
+  }
+
+
+  @include vp-1599 {
+    display: none;
+  }
+
+  @include vp-767 {}
   width: 100%;
 }
 
