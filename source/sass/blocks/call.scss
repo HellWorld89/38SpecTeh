@@ -142,35 +142,35 @@
 
 }
 
-.call__input-wrapper::before {
-  @include vp-1600 {
-    position: absolute;
-    content: "";
-    display: block;
-    background-image: url(../../images/desktop1600/crane-back.svg);
-    background-repeat: no-repeat;
-    width: 964px;
-    height: 264px;
-    right: 0;
-    top: -103px;
-  }
+// .call__input-wrapper::before {
+//   @include vp-1600 {
+//     position: absolute;
+//     content: "";
+//     display: block;
+//     background-image: url(../../images/desktop1600/crane-back.svg);
+//     background-repeat: no-repeat;
+//     width: 964px;
+//     height: 264px;
+//     right: 0;
+//     top: -103px;
+//   }
 
-  @include vp-1599 {
-    position: absolute;
-    content: "";
-    display: block;
-    background-image: url(../../images/desktop1600/crane-back.svg);
-    background-repeat: no-repeat;
-    width: 964px;
-    height: 264px;
-    right: 0;
-    top: -103px;
-    right: -680px;
-    top: -7px;
-  }
+//   @include vp-1599 {
+//     position: absolute;
+//     content: "";
+//     display: block;
+//     background-image: url(../../images/desktop1600/crane-back.svg);
+//     background-repeat: no-repeat;
+//     width: 964px;
+//     height: 264px;
+//     right: 0;
+//     top: -103px;
+//     right: -680px;
+//     top: -7px;
+//   }
 
-  @include vp-767 {
-    display: none;
-  }
+//   @include vp-767 {
+//     display: none;
+//   }
 
-}
+// }

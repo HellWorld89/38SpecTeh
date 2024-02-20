@@ -1,19 +1,19 @@
 .swiper {
   @include vp-1600 {
-    width: $desktop-width;
+    max-width: $desktop-width;
     min-height: 592px;
     margin: 0 auto;
   }
 
 
   @include vp-1599 {
-    width: $tablet-width;
+    width: 100%;
     min-height: 592px;
     margin: 0 auto;
   }
 
   @include vp-767 {
-    width: $mobile-width;
+    width: 100%;
     min-height: 657px;
     margin: 0 auto;
   }
@@ -79,7 +79,7 @@
   @include vp-1600 {
     background-image: url(../../images/desktop1600/banner1.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 100%;
     width: 100%;
   }
@@ -87,7 +87,7 @@
   @include vp-1599 {
     background-image: url(../../images/tablet768/768-banner.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 100%;
     width: 100%;
   }
@@ -95,7 +95,7 @@
   @include vp-767 {
     background-image: url(../../images/desktop1600/banner320.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 100%;
     width: 100%;
   }
@@ -116,7 +116,7 @@
   }
 
   @include vp-767 {
-    width: 320px;
+    width: 100%;
     min-height: 657px;
     background-color: rgba(255, 255, 255, 0.8);
   }
@@ -178,11 +178,12 @@
   }
 
   @include vp-767 {
-    width: 320px;
+    width: 100%;
     min-height: 657px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     padding: 70px 11px 20px 18px;
   }
 
@@ -254,6 +255,12 @@
   margin-bottom: 30px;
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
     0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.swiper__text br {
+  @include vp-767 {
+    display: none;
+  }
 }
 
 .swiper__button-wrapper {

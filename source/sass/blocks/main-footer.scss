@@ -79,9 +79,13 @@
 .main-footer__nav {
   @include vp-1600 {
     width: 120px;
+    margin: 10px;
   }
 
-  @include vp-1599 {}
+  @include vp-1599 {
+    width: 120px;
+    margin: 10px;
+  }
 
   @include vp-767 {
     width: 120px;
@@ -113,9 +117,13 @@
 .main-footer__truck {
   @include vp-1600 {
     width: 120px;
+    margin: 10px;
   }
 
-  @include vp-1599 {}
+  @include vp-1599 {
+    width: 120px;
+    margin: 10px;
+  }
 
   @include vp-767 {
     width: 150px;
@@ -124,9 +132,15 @@
 }
 
 .main-footer__services {
-  @include vp-1600 {}
+  @include vp-1600 {
+    width: 120px;
+    margin: 10px;
+  }
 
-  @include vp-1599 {}
+  @include vp-1599 {
+    width: 120px;
+    margin: 10px;
+  }
 
   @include vp-767 {
     width: 150px;
@@ -149,10 +163,20 @@
 
 .main-footer__social {
   @include vp-1600 {
-    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 10px;
   }
 
-  @include vp-1599 {}
+  @include vp-1599 {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
 
   @include vp-767 {
     width: 100%;
@@ -164,10 +188,14 @@
 
 .main-footer__contacts {
   @include vp-1600 {
-    width: 120px;
+    width: 250px;
+    margin: 10px;
   }
 
-  @include vp-1599 {}
+  @include vp-1599 {
+    width: 250px;
+    margin: 10px;
+  }
 
   @include vp-767 {
     width: 100%;
