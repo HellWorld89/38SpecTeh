@@ -1,0 +1,32 @@
+.breadcrumbs__list {
+  display: flex;
+  font-family: $montserrat-regular;
+  font-size: 12px;
+  color: $base-black;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 123px;
+}
+
+.breadcrumbs__item {
+  position: relative;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.breadcrumbs__item::after {
+  position: absolute;
+  top: 0;
+  right: -10px;
+  content: "-";
+  display: block;
+  color: $base-black;
+}
+
+.breadcrumbs__item:last-child::after {
+content: none;
+
+}
+
+.breadcrumbs__link {}
