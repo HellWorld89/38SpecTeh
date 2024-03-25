@@ -1,6 +1,3 @@
-import './pagination.js';
-// import './swiper.js';
-
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
@@ -51,4 +48,5 @@ const swiper1 = new Swiper('.swiper2', {
     el: '.swiper-scrollbar',
   },
 });
+
 
