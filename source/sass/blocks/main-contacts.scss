@@ -3,6 +3,7 @@
   background-color: $base-blue;
   color: $white;
 
+
   @include vp-1600 {}
 
   @include vp-1599 {}
@@ -35,6 +36,7 @@
 
   @include vp-767 {
     display: flex;
+    width: $mobile-width;
     flex-direction: column;
   }
 
