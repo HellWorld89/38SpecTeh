@@ -1,5 +1,6 @@
 .main-catalog {
   width: 100%;
+  background-color: $white-grey;
 
   @include vp-1600 {
     background-color: $white-grey;
@@ -25,14 +26,11 @@
     transform: rotate(90deg);
     bottom: 40%;
     right: -42%;
-
-
-
   }
 
-  @include vp-1599 {}
-
-  @include vp-767 {}
+  @include vp-1599 {
+    display: none;
+  }
 
 }
 
@@ -48,6 +46,7 @@
   @include vp-1599 {
     width: $tablet-width;
     margin: 0 auto;
+    padding: 39px 0 230px
   }
 
   @include vp-767 {
@@ -59,16 +58,20 @@
 .main-catalog__title {
   margin: 0;
   padding: 0;
+  font-family: $PTSans-Bold;
+  color: $base-black;
 
   @include vp-1600 {
-    font-family: $PTSans-Bold;
-    color: $base-black;
     font-size: 44px;
     padding-left: 133px;
     margin-bottom: 50px;
   }
 
-  @include vp-1599 {}
+  @include vp-1599 {
+    font-size: 44px;
+    padding-left: 10px;
+    margin-bottom: 50px;
+  }
 
   @include vp-767 {}
 
@@ -115,14 +118,14 @@
   @include vp-1599 {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    width: $tablet-width;
-    margin: 0 auto;
+    width: 482px;
+    min-height: 1000px;
   }
 
   @include vp-767 {
     flex-wrap: wrap;
     width: $mobile-width;
     margin: 0 auto;
+    justify-content: center;
   }
 }
