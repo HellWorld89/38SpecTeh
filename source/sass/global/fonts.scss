@@ -68,3 +68,13 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Arial-narrow";
+  src:
+    url("../../fonts/arialnarrow.woff2") format("woff2"),
+    url("../../fonts/arialnarrow.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

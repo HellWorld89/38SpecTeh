@@ -166,6 +166,7 @@
     min-height: 592px;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     padding: 129px 100px 129px 126px;
   }
 
@@ -205,7 +206,7 @@
     padding: 0;
     font-family: $PTSans-Bold;
     font-weight: 700;
-    font-size: 44px;
+    font-size: 55px;
     color: #2d2d2d;
     margin-bottom: 70px;
     text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
@@ -250,7 +251,7 @@
   padding: 0;
   font-family: $montserrat-regular;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 24px;
   color: #2d2d2d;
   margin-bottom: 30px;
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
