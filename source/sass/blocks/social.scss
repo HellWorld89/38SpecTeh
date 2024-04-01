@@ -1,0 +1,100 @@
+.social {
+  @include vp-1600 {
+    &--menu {
+      display: none;
+    }
+  }
+
+
+  @include vp-1599 {
+    display: none;
+
+    &--footer {
+      display: block;
+      display: flex;
+    }
+
+    &--menu {
+      display: block;
+      display: flex;
+      justify-content: center;
+      padding: 25px;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @include vp-767 {}
+
+}
+
+.social__list {
+  display: flex;
+  width: 200px;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin: 20px;
+
+  @include vp-1599 {
+    width: 150px;
+    margin: 10px;
+    &--menu {
+      margin: 20px;
+    }
+  }
+
+  @include vp-767 {}
+}
+
+.social__item fa-whatsapp {
+  list-style: none;
+  margin: 0 15px;
+  margin-right: 10px;
+}
+
+.social__button {
+  @include vp-1600 {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 42px;
+    background: $base-blue;
+    border-radius: 10%;
+    font-size: 20px;
+    color: $white-grey;
+    transition: .5s;
+  }
+
+  @include vp-1599 {}
+
+  @include vp-767 {}
+}
+
+// .social__button::before {
+//   content: '';
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   border-radius: 50%;
+//   background: $base-orange;
+//   transition: .5s;
+//   transform: scale(.9);
+//   z-index: -1;
+// }
+
+// .social__button:hover::before {
+//   transform: scale(1.1);
+//   box-shadow: 0 0 15px $base-orange;
+// }
+
+// .social__button:hover {
+//   color: $base-orange;
+//   box-shadow: 0 0 5px $base-orange;
+//   text-shadow: 0 0 5px $base-orange;
+// }

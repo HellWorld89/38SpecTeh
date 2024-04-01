@@ -41,14 +41,7 @@
           Сайт 38Спецтех по аренде спецтехники в Иркутске
         </h1>
       </div>
-
       <ul class="main-header__list">
-        <!-- <li class="main-header__item">
-          <svg class="main-header__link-icon" width="21" height="21">
-            <use xlink:href="images/icons/stack.svg#clock"></use>
-          </svg>
-          <span class="main-header__link-text">9:00-18:00</span>
-        </li> -->
         <li class="main-header__item">
           <svg class="main-header__link-icon" width="21" height="21">
             <use xlink:href="images/icons/stack.svg#marker"></use>
@@ -58,35 +51,37 @@
           </p>
         </li>
       </ul>
-      <div class="main-header__social">
-        <ul class="main-header__social-list">
-          <li class="main-header__social-item">
-            <a class="main-header__social-button" href="https://wa.me/79041596569">
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__button" target="_blank" href="https://wa.me/79041596569">
               <i class="fab fa-whatsapp"></i>
               <span class="visually-hidden">WhatsApp.</span>
             </a>
           </li>
-          <li class="main-header__social-item">
-            <a class="main-header__social-button" href="https://t.me/Specteh38Specteh">
+          <li class="social__item">
+            <a class="social__button" target="_blank" href="https://t.me/Specteh38Specteh">
               <i class="fab fa-telegram"></i>
               <span class="visually-hidden">Телеграм.</span>
             </a>
           </li>
-          <li class="main-header__social-item">
-            <a class="main-header__social-button" href="https://www.instagram.com/38specteh?igsh=MWViNGJ2Nnp3N3l2aQ==">
+          <li class="social__item">
+            <a class="social__button" target="_blank"
+              href="https://www.instagram.com/38specteh?igsh=MWViNGJ2Nnp3N3l2aQ==">
               <i class="fab fa-instagram"></i>
               <span class="visually-hidden">Инстаграм.</span>
             </a>
           </li>
-          <li class="main-header__social-item">
-            <a class="main-header__social-button" href="https://vk.com/38specteh">
+          <li class="social__item">
+            <a class="social__button" target="_blank" href="https://vk.com/38specteh">
               <i class="fab fa-vk"></i>
               <span class="visually-hidden">Вконтакте.</span>
             </a>
 
           </li>
-          <li class="main-header__social-item">
-            <a class="main-header__social-button" href="https://yandex.ru/maps/org/spetstekh38/1162318791/?from=mapframe&ll=104.280903%2C52.231566&z=17">
+          <li class="social__item">
+            <a class="social__button" target="_blank"
+              href="https://yandex.ru/maps/org/spetstekh38/1162318791/?from=mapframe&ll=104.280903%2C52.231566&z=17">
               <i class="fab fa-yandex"></i>
               <span class="visually-hidden">Яндекс.</span>
             </a>
@@ -107,11 +102,14 @@
       </div>
     </div>
     <div class="main-header__box">
-      <input class="main-nav__side-menu" type="checkbox" id="side-menu" />
-      <label class="main-nav__hamb" for="side-menu">
-        <span class="main-nav__hamb-line"></span></label>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <div class="main-nav__side-menu">
+          <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню
+          </span>
+        </button>
+      </div>
+       <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Каталог</span></a>
           </li>
@@ -122,10 +120,50 @@
             <a class="main-nav__link" href="about.html"><span class="main-nav__link-text">О компании</span></a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#"><span class="main-nav__link-text">Цены</span></a>
+            <a class="main-nav__link" download="#" href="#"><span class="main-nav__link-text">Получить КП</span></a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="contacts.html"><span class="main-nav__link-text">Контакты</span></a>
+          </li>
+          <li class="main-nav__item">
+            <div class="social social--menu">
+              <span class="main-nav__link-text">СВЯЖИТЕСЬ С НАМИ</span>
+              <ul class="social__list social__list--menu">
+                <li class="social__item">
+                  <a class="social__button" target="_blank" href="https://wa.me/79041596569">
+                    <i class="fab fa-whatsapp"></i>
+                    <span class="visually-hidden">WhatsApp.</span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__button" target="_blank" href="https://t.me/Specteh38Specteh">
+                    <i class="fab fa-telegram"></i>
+                    <span class="visually-hidden">Телеграм.</span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__button" target="_blank"
+                    href="https://www.instagram.com/38specteh?igsh=MWViNGJ2Nnp3N3l2aQ==">
+                    <i class="fab fa-instagram"></i>
+                    <span class="visually-hidden">Инстаграм.</span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__button" target="_blank" href="https://vk.com/38specteh">
+                    <i class="fab fa-vk"></i>
+                    <span class="visually-hidden">Вконтакте.</span>
+                  </a>
+
+                </li>
+                <li class="social__item">
+                  <a class="social__button" target="_blank"
+                    href="https://yandex.ru/maps/org/spetstekh38/1162318791/?from=mapframe&ll=104.280903%2C52.231566&z=17">
+                    <i class="fab fa-yandex"></i>
+                    <span class="visually-hidden">Яндекс.</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
       </nav>
@@ -159,10 +197,7 @@
           <a class="main-footer__link" href="catalog.html">Каталог техники</a>
         </li>
         <li class="main-footer__item">
-          <a class="main-footer__link" href="">Наши работы</a>
-        </li>
-        <li class="main-footer__item">
-          <a class="main-footer__link" href="">Прайс-лист</a>
+          <a class="main-footer__link" download="#" href="">Получить КП</a>
         </li>
         <li class="main-footer__item">
           <a class="main-footer__link" href="contacts.html">Контакты</a>
@@ -170,19 +205,13 @@
       </ul>
     </nav>
     <div class="main-footer__truck">
-      <h2 class="main-footer__title">Техника</h2>
+      <h2 class="main-footer__title">Партнерам</h2>
       <ul class="main-footer__list">
         <li class="main-footer__item">
-          <a class="main-footer__link" href="">Экскаватор-погрузчик</a>
+          <a class="main-footer__link" href="">Трудоустройство (физ лица)</a>
         </li>
         <li class="main-footer__item">
-          <a class="main-footer__link" href="">Автовышка</a>
-        </li>
-        <li class="main-footer__item">
-          <a class="main-footer__link" href="">КМУ</a>
-        </li>
-        <li class="main-footer__item">
-          <a class="main-footer__link" href="">Самосвал</a>
+          <a class="main-footer__link" href="">Сотрудничество</a>
         </li>
       </ul>
     </div>
@@ -203,36 +232,38 @@
         </li>
       </ul>
     </div>
-    <div class="main-footer__social">
-      <button class="button button--social">Свяжитесь со мной</button>
-      <ul class="main-footer__social-list">
-        <li class="main-footer__social-item">
-          <a class="main-footer__social-link" href="">
-            <svg class="main-footer__social-link" width="24" height="24">
-              <use xlink:href="images/icons/stack.svg#whatsapp"></use>
-            </svg>
+    <div class="main-footer__social social social--footer">
+      <button class="button button--social">Задать вопрос</button>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__button" target="_blank" href="https://wa.me/79041596569">
+            <i class="fab fa-whatsapp"></i>
+            <span class="visually-hidden">WhatsApp.</span>
           </a>
         </li>
-        <li class="main-footer__social-item">
-          <a class="main-footer__social-link" href="">
-            <svg class="main-footer__social-link" width="24" height="24">
-              <use xlink:href="images/icons/stack.svg#viber"></use>
-            </svg>
+        <li class="social__item">
+          <a class="social__button" target="_blank" href="https://t.me/Specteh38Specteh">
+            <i class="fab fa-telegram"></i>
+            <span class="visually-hidden">Телеграм.</span>
           </a>
         </li>
-        <li class="main-footer__social-item">
-          <a class="main-footer__social-link" href="https://vk.com/38specteh">
-            <svg class="main-footer__social-link" width="24" height="24">
-              <use xlink:href="images/icons/stack.svg#vkontakte"></use>
-            </svg>
+        <li class="social__item">
+          <a class="social__button" target="_blank" href="https://www.instagram.com/38specteh?igsh=MWViNGJ2Nnp3N3l2aQ==">
+            <i class="fab fa-instagram"></i>
+            <span class="visually-hidden">Инстаграм.</span>
           </a>
         </li>
-        <li class="main-footer__social-item">
-          <a class="main-footer__social-link"
-            href="https://yandex.ru/maps/org/spetstekh38/1162318791/?from=mapframe&ll=104.280903%2C52.231566&z=17">
-            <svg class="main-footer__social-link" width="24" height="24">
-              <use xlink:href="images/icons/stack.svg#yandex"></use>
-            </svg>
+        <li class="social__item">
+          <a class="social__button" target="_blank" href="https://vk.com/38specteh">
+            <i class="fab fa-vk"></i>
+            <span class="visually-hidden">Вконтакте.</span>
+          </a>
+
+        </li>
+        <li class="social__item">
+          <a class="social__button" target="_blank" href="https://yandex.ru/maps/org/spetstekh38/1162318791/?from=mapframe&ll=104.280903%2C52.231566&z=17">
+            <i class="fab fa-yandex"></i>
+            <span class="visually-hidden">Яндекс.</span>
           </a>
         </li>
       </ul>
@@ -241,15 +272,15 @@
       <h2 class="main-footer__title">Контакты</h2>
       <ul class="main-footer__list">
         <li class="main-footer__item"><a href="tel:+79087773838">+7 (908) 777-38-38</a> Менеджер <br /></li>
-        <li class="main-footer__item"><a href="tel:+73952503838">+7 (3952) 50-38-38</a> Диспетчер <br /></li>
-        <li class="main-footer__item"><a href="tel:+790415965691">+7 (904) 159-65-69</a> Бухгалтерия <br /></li>
+        <li class="main-footer__item"><a href="tel:+73952503838">+7 (964) 159-65-69</a> Оператор<br /></li>
+        <li class="main-footer__item"> <a href="tel:+790415965691">+7 (3952) 50-38-38</a> Офис</li>
       </ul>
 
     </div>
   </div>
 </footer>
 
-<script src="js/script.js" defer></script>
+<script src="js/script.js" type="module" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 

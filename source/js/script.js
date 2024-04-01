@@ -1,4 +1,6 @@
 import './pagination.js';
+import './mainnav.js';
+import './formsend.js';
 // import './swiper.js';
 
 const swiper = new Swiper('.swiper', {
