@@ -1,10 +1,9 @@
 <?php
-
 use PHPMailer/PHPMailer/PHPMailer;
 use PHPMailer/PHPMailer/Exception;
 
-require 'phpmailer/src/Exception.php';
-require 'phpmailer/src/PHPMailer.php';
+require '/PHPMailer-6.9.1/src/Exception.php';
+require '/PHPMailer-6.9.1/src/PHPMailer.php';
 
 $mail = new PHPMailer(true);
 $mail->CharSet = 'UTF-8';
@@ -12,9 +11,9 @@ $mail->setLanguage('ru', 'phpmailer/language/');
 $mail->isHTML(true);
 
 // От кого письмо
-$mail->setFrom('info@fls.guru', 'Вован');
+$mail->setFrom('sapozhnikovladimir89@gmail.com', 'Вован');
 // Кому отправить
-$mail->addAddress('sapozhnikovl@yandex.ru');
+$mail->addAddress('sapozhnikovladimir89@gmail.com');
 // Тема письма
 $mail->Subject ='Заказ с сайта 38Specteh';
 
@@ -39,13 +38,13 @@ $mail->Body = $body;
 // Отправка
 
 if (!$mail->send()) {
-  $message = 'Ошибка';
+  $message = 'Ошибка в отправке';
 } else {
   $message = 'Данные отправлены!';
 }
 
 $response = ['message' => $message];
 
-header('Content-type:application/json');
+header('Content-type: application/json');
 echo json_encode($response);
 ?>

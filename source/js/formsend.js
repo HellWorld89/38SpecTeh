@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let error = formValidate(form);
 
-    let formDate = new FormData(form);
-    // FormDataEvent.append('image, formImage.files[0]');
+    let formData = new FormData(form);
+    // formData.append('image, formImage.files[0]');
     if (error === 0) {
       shroud.classList.add('_sending');
       let response = await fetch('sendmail.php', {
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
         form.reset();
         shroud.classList.remove('_sending');
       } else {
-        alert("Ошибка");
+        alert("Ошибка в JS");
         shroud.classList.remove('_sending');
       }
 
