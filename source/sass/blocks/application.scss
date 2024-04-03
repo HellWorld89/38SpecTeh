@@ -1,0 +1,10 @@
+.application {
+  width: 100%;
+}
+
+.application__wrapper {
+  width: $desktop-width;
+  background-color: #2A385B;
+  margin: 0 auto;
+  padding: 30px;
+}
