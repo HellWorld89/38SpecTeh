@@ -3,8 +3,26 @@
 }
 
 .application__wrapper {
-  width: $desktop-width;
-  background-color: #2A385B;
-  margin: 0 auto;
-  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  @include vp-1600 {
+    width: $desktop-width;
+    background-color: #2A385B;
+    margin: 0 auto;
+    padding: 30px;
+  }
+
+  @include vp-1599 {
+    width: $tablet-width;
+    background-color: #2A385B;
+    margin: 0 auto;
+    padding: 30px;
+  }
+
+  @include vp-767 {
+    width: $mobile-width;
+    background-color: #2A385B;
+    margin: 0 auto;
+    padding: 30px;
+  }
+
 }

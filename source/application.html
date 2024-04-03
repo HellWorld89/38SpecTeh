@@ -24,6 +24,30 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<!-- Marquiz script start -->
+<script>
+  (function(w, d, s, o){
+    var j = d.createElement(s); j.async = true; j.src = '//script.marquiz.ru/v2.js';j.onload = function() {
+      if (document.readyState !== 'loading') Marquiz.init(o);
+      else document.addEventListener("DOMContentLoaded", function() {
+        Marquiz.init(o);
+      });
+    };
+    d.head.insertBefore(j, d.head.firstElementChild);
+  })(window, document, 'script', {
+      host: '//quiz.marquiz.ru',
+      region: 'eu',
+      id: '660d0154fe216e00260ac7bb',
+      autoOpen: false,
+      autoOpenFreq: 'once',
+      openOnExit: false,
+      disableOnMobile: false
+    }
+  );
+  </script>
+  <!-- Marquiz script end -->
+
+
 </head>
 
 <body class="page__body">
@@ -105,11 +129,11 @@
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__side-menu">
           <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню
-          </span>
-        </button>
-      </div>
-       <ul class="main-nav__list">
+            <span class="visually-hidden">Открыть меню
+            </span>
+          </button>
+        </div>
+        <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Каталог</span></a>
           </li>
@@ -170,6 +194,13 @@
     </div>
 
   </header>
+  <main class="main-index">
+    <section class="application">
+      <div class="application__wrapper">
+        <div data-marquiz-id="660d0154fe216e00260ac7bb"></div>
+        <script>(function(t, p) {window.Marquiz ? Marquiz.add([t, p]) : document.addEventListener('marquizLoaded', function() {Marquiz.add([t, p])})})('Inline', {id: '660d0154fe216e00260ac7bb', buttonText: 'Рассчитать заявку', bgColor: '#ed6d12', textColor: '#ffffff', rounded: true, shadow: 'rgba(237, 109, 18, 0.5)', blicked: true, buttonOnMobile: true})</script>
+      </div>
+    </section>
   </main>
   <footer class="main-footer">
     <div class="main-footer__box">
@@ -281,7 +312,7 @@
     </div>
   </footer>
 
-  <script src="js/script.js"  type="module"></script>
+  <script src="js/script.js" type="module" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 

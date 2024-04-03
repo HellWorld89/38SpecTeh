@@ -86,3 +86,8 @@
   width: 10px;
   height: 17px;
 }
+
+.button:hover {
+  background-color: $base-blue-second;
+  color: $white;
+}

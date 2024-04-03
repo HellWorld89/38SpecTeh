@@ -11,5 +11,6 @@
   padding: 10px 10px 10px 35px
 }
 
-.item__item {
+.item__item:hover {
+  color: $base-orange;
 }
