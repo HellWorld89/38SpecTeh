@@ -6,10 +6,14 @@ import './formsend.js';
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
-  loop: false,
+  loop: true,
   slidesPerView: 1,
   watchSlidesVisibility: true,
   watchSlidesProgress: true,
+
+  // autoplay: {
+  //   delay: 6000,
+  // },
 
   // If we need pagination
   pagination: {

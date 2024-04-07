@@ -77,27 +77,123 @@
 
 .swiper-slide__inner {
   @include vp-1600 {
-    background-image: url(../../images/desktop1600/banner1.jpg);
+    background-image: url(../../images/desktop1600/slide1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
     width: 100%;
+
+    &--excavator {
+      background-image: url(../../images/desktop1600/slide3.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+    }
+
+    &--kmu {
+      background-image: url(../../images/desktop1600/slide2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+    }
+
+    &--truck {
+      background-image: url(../../images/desktop1600/slide4.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+    }
+
+    &--bur {
+      background-image: url(../../images/desktop1600/slide5.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+    }
   }
 
   @include vp-1599 {
-    background-image: url(../../images/tablet768/768-banner.png);
+    background-image: url(../../images/tablet768/slide1_768.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
     width: 100%;
+
+    &--excavator {
+      background-image: url(../../images/tablet768/slide3_768.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+    }
+
+    &--kmu {
+      background-image: url(../../images/tablet768/slide2_768.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+    }
+
+    &--truck {
+      background-image: url(../../images/tablet768/slide4_768.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+    }
+
+    &--bur {
+      background-image: url(../../images/tablet768/slide5_768.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+    }
   }
 
   @include vp-767 {
-    background-image: url(../../images/desktop1600/banner320.jpg);
+    background-image: url(../../images/mobile320/slide1_320.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
     width: 100%;
+
+    &--excavator {
+      background-image: url(../../images/mobile320/slide3_320.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+    }
+
+    &--kmu {
+      background-image: url(../../images/mobile320/slide2_320.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+    }
+
+    &--truck {
+      background-image: url(../../images/mobile320/slide4_320.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+    }
+
+    &--bur {
+      background-image: url(../../images/mobile320/slide5_320.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+    }
   }
 
 }
@@ -173,6 +269,7 @@
   @include vp-1599 {
     width: 492px;
     min-height: 592px;
+    justify-content: space-between;
     display: flex;
     flex-direction: column;
     padding: 70px 33px 50px 30px;
@@ -206,7 +303,7 @@
     padding: 0;
     font-family: $PTSans-Bold;
     font-weight: 700;
-    font-size: 55px;
+    font-size: 33px;
     color: #2d2d2d;
     margin-bottom: 70px;
     text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
@@ -228,7 +325,7 @@
 
   @include vp-767 {
     font-size: 36px;
-    margin-bottom: 90px;
+    margin-bottom: 165px;
   }
 
 }
@@ -251,7 +348,7 @@
   padding: 0;
   font-family: $montserrat-regular;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 23px;
   color: #2d2d2d;
   margin-bottom: 30px;
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
