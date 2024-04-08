@@ -1,19 +1,20 @@
 import './pagination.js';
 import './mainnav.js';
 import './formsend.js';
+
 // import './swiper.js';
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
-  loop: true,
+  loop: false,
   slidesPerView: 1,
   watchSlidesVisibility: true,
   watchSlidesProgress: true,
 
-  // autoplay: {
-  //   delay: 6000,
-  // },
+  autoplay: {
+    delay: 6000,
+  },
 
   // If we need pagination
   pagination: {

@@ -129,6 +129,7 @@
     position: absolute;
     background-color: inherit;
     height: 100vh;
+    overflow: visible;
   }
 
   @include vp-767 {}
