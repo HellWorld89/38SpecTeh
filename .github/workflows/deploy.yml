@@ -21,16 +21,20 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Test FTP connection
+        run: |
+          curl -v --ssl-reqd \
+          ftp://${{ secrets.HOST }}:${{ secrets.PORT }} \
+          -u ${{ secrets.USERNAME }}:${{ secrets.PASSWORD }} \
+          -Q "CWD ${{ secrets.REMOTE_PATH }}"
+
       - name: Deploy via FTPES
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.1
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT || '21' }}
-          protocol: ${{ secrets.FTP_PROTOCOL || 'ftpes' }}
+          protocol: ftps  # Альтернатива FTPES
           local-dir: ./build/
           server-dir: ${{ secrets.REMOTE_PATH }}
-          exclude: |
-            .DS_Store
-            *.map
