@@ -29,8 +29,6 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./build/
           server-dir: ${{ secrets.FTP_SERVER_DIR }}
-          # Доп. настройки (опционально):
-          ftp-passive: true  # Если есть проблемы с подключением
           exclude: |
             **/.git*
             **/.DS_Store
