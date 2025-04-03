@@ -2,8 +2,10 @@ name: Deploy to FTP
 
 on:
   push:
-    branches: [ "main" ] # Или другая ветка
-
+    branches: [ "main" ]
+    tags:
+      - 'v*' 
+  workflow_dispatch:
 jobs:
   deploy:
     runs-on: ubuntu-latest

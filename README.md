@@ -1,5 +1,7 @@
 # Сборка сайта 38SpecTeh
 
+[![Deploy to FTP](https://github.com/ваш-юзер/ваш-репозиторий/actions/workflows/deploy.yml/badge.svg)](https://github.com/ваш-юзер/ваш-репозиторий/actions/workflows/deploy.yml)
+
 Сборка работает на gulp 4 версии
 
 ## Начало
