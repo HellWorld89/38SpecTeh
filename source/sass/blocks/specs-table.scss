@@ -1,0 +1,37 @@
+.specs-table {
+  @include vp-1600 {
+    font-family: $montserrat-regular;
+    font-size: 16px;
+    line-height: 156.7%;
+    color: $base-black;
+    width: 542px;
+  }
+
+
+  @include vp-1599 {
+    font-family: $montserrat-regular;
+    font-size: 16px;
+    line-height: 156.7%;
+    color: $base-black;
+  }
+
+  @include vp-767 {}
+
+  &--catalog {
+    color: $white;
+    font-size: 14px;
+  }
+}
+.specs-table__row {
+
+}
+.specs-table__cell {
+  padding-bottom: 20px;
+  &--price {
+    font-weight: bold;
+  }
+}
+.specs-table__price-value {
+  color: $base-orange;
+  font-weight: 700;
+}

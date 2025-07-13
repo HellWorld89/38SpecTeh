@@ -1,0 +1,31 @@
+.main-info {}
+
+.main-info__wrapper {
+  position: relative;
+
+  @include vp-1600 {
+    width: $main-block-width;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 230px 133px;
+    min-height: 554px;
+  }
+
+  @include vp-1599 {
+    width: $tablet-width;
+    margin: 0 0 230px 133px;
+  }
+
+  @include vp-767 {
+    width: $mobile-width;
+    margin: 0 auto;
+  }
+}
+
+.main-info__pictures-container {
+  width: 571px;
+}
+
+.main-info__text-container {
+  width: 542px;
+}

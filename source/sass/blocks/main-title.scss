@@ -1,0 +1,57 @@
+.main-title {
+  width: 100%;
+  background-color: $white-grey;
+  margin: 0 auto;
+  flex-grow: 1;
+
+  @include vp-1600 {
+    background-color: $white-grey;
+  }
+
+  @include vp-1599 {}
+
+  @include vp-767 {}
+
+}
+
+.main-title__wrapper {
+  position: relative;
+
+  @include vp-1600 {
+    width: $desktop-width;
+    margin: 0 auto;
+    padding: 39px 0 102px
+  }
+
+  @include vp-1599 {
+    width: $tablet-width;
+    margin: 0 auto;
+    padding: 39px 0 102px
+  }
+
+  @include vp-767 {
+    width: $mobile-width;
+    margin: 0 auto;
+  }
+}
+
+.main-title__title {
+  margin: 0;
+  padding: 0;
+  font-family: $PTSans-Bold;
+  color: $base-black;
+
+  @include vp-1600 {
+    font-size: 44px;
+    margin: 0 0 102px 133px;
+  }
+
+  @include vp-1599 {
+    font-size: 44px;
+    padding-left: 10px;
+    margin-bottom: 50px;
+  }
+
+  @include vp-767 {}
+
+}
