@@ -104,6 +104,16 @@ export function copyAssets () {
     .pipe(gulp.dest('build'));
 }
 
+export function copyPhp () {
+  return gulp.src('source/*.php', { base: 'source' })
+    .pipe(gulp.dest('build'));
+}
+
+export function copyVendor () {
+  return gulp.src('vendor/**/*', { base: '.' })
+    .pipe(gulp.dest('build'));
+}
+
 export function startServer (done) {
   browser.init({
     server: {
@@ -122,9 +132,9 @@ function reloadServer (done) {
 }
 
 function watchFiles () {
-  gulp.watch('source/sass/**/*.scss', gulp.series(processStyles));
-  gulp.watch('source/js/script.js', gulp.series(processScripts));
-  gulp.watch('source/*.html', gulp.series(processMarkup, reloadServer));
+  gulp.watch('source/sass/**/*.scss', { usePolling: true }, gulp.series(processStyles));
+  gulp.watch('source/js/script.js', { usePolling: true }, gulp.series(processScripts));
+  gulp.watch('source/*.html', { usePolling: true }, gulp.series(processMarkup, reloadServer));
 }
 
 function compileProject (done) {
@@ -135,6 +145,8 @@ function compileProject (done) {
     optimizeVector,
     createStack,
     copyAssets,
+    copyPhp,  
+    copyVendor
   )(done);
 }
 

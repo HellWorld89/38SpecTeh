@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const content = document.querySelector(".content");
-  const itemsPerPage = 6; // set number of items per page
+  const content = document.querySelector(".content"); // сам список <ul>
+  const itemsPerPage = 6;
   let currentPage = 0;
-  const items = Array.from(content.getElementsByTagName("li")).slice(0);
+  const items = Array.from(content.children); // все дочерние <li>
 
+  // Функция показа страницы
   function showPage(page) {
     const startIndex = page * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
@@ -13,38 +14,46 @@ document.addEventListener("DOMContentLoaded", function () {
     updateActiveButtonStates();
   }
 
-  function createPageButtons() {
+  // Создание кнопок пагинации и вставка их ПОСЛЕ списка
+  function createPagination() {
     const totalPages = Math.ceil(items.length / itemsPerPage);
+    if (totalPages <= 1) return; // если страница одна – пагинация не нужна
+
+    // Ищем родительский контейнер, куда будем вставлять пагинацию
+    const wrapper = document.querySelector(".main-catalog__card-wrapper");
+    if (!wrapper) return;
+
+    // Создаём контейнер для пагинации
     const paginationContainer = document.createElement("div");
-    const paginationDiv = document.body.appendChild(paginationContainer);
     paginationContainer.classList.add("pagination");
 
-    // Add page buttons
+    // Создаём кнопки
     for (let i = 0; i < totalPages; i++) {
       const pageButton = document.createElement("button");
       pageButton.textContent = i + 1;
+      pageButton.dataset.page = i;
       pageButton.addEventListener("click", () => {
         currentPage = i;
         showPage(currentPage);
-        updateActiveButtonStates();
       });
-
-      content.appendChild(paginationContainer);
-      paginationDiv.appendChild(pageButton);
+      paginationContainer.appendChild(pageButton);
     }
+
+    // Вставляем пагинацию после списка (.content)
+    wrapper.insertBefore(paginationContainer, content.nextSibling);
+    // Или можно использовать wrapper.appendChild(paginationContainer),
+    // но тогда она окажется после всего, что есть в wrapper,
+    // а мы хотим сразу после списка – insertBefore безопаснее.
   }
 
+  // Обновление активной кнопки
   function updateActiveButtonStates() {
     const pageButtons = document.querySelectorAll(".pagination button");
     pageButtons.forEach((button, index) => {
-      if (index === currentPage) {
-        button.classList.add("active");
-      } else {
-        button.classList.remove("active");
-      }
+      button.classList.toggle("active", index === currentPage);
     });
   }
 
-  createPageButtons(); // Call this function to create the page buttons initially
+  createPagination();
   showPage(currentPage);
 });

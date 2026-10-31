@@ -31,7 +31,7 @@
     margin-bottom: 15px;
 
     &--catalog {
-      width: 226px;
+      width: 240px;
       min-height: 410px;
       background-color: $base-blue;
       margin-bottom: 30px;
@@ -40,7 +40,9 @@
   }
 
   @include vp-767 {
-    width: 290px;
+    width: auto;
+    flex: 0 0 auto;
+    margin: 0 auto;
     min-height: 470px;
     margin-right: 0;
   }
@@ -229,12 +231,12 @@
 
 .card__item {
   @include vp-1600 {
-    padding: 22px 30px;
+    padding: 22px 20px;
   }
 
 
   @include vp-1599 {
-    padding: 20px 10px;
+    padding: 20px 5px;
   }
 
   @include vp-767 {

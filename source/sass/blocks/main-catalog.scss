@@ -53,7 +53,8 @@
   }
 
   @include vp-767 {
-    width: $mobile-width;
+    width: 100%;
+    min-width: $mobile-width;
     margin: 0 auto;
   }
 }
@@ -76,7 +77,9 @@
     margin-bottom: 50px;
   }
 
-  @include vp-767 {}
+  @include vp-767 {
+    text-align: center;
+  }
 
 }
 
@@ -121,7 +124,7 @@
   @include vp-1599 {
     display: flex;
     flex-wrap: wrap;
-    width: 482px;
+    width: 510px;
     min-height: 1000px;
   }
 

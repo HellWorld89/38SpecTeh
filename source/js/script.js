@@ -1,6 +1,7 @@
 import './pagination.js';
 import './mainnav.js';
 import './formsend.js';
+import './quiz.js';
 // import './filtersort.js';
 
 // import './swiper.js';

@@ -53,20 +53,25 @@
     align-items: center;
   }
 
-
   @include vp-1599 {
     display: flex;
     width: $tablet-width;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
+    padding-right: 80px; /* Оставляем место справа для круглой кнопки */
+    box-sizing: border-box;
   }
 
   @include vp-767 {
     display: flex;
-    flex-direction: column;
-    width: $mobile-width;
-    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 65px 10px 15px; /* Сдвигаем контент влево от кнопки */
+    box-sizing: border-box;
   }
 }
 
@@ -295,6 +300,7 @@
   @include vp-767 {}
 
 }
+
 
 // @include vp-1600 {}
 // @include vp-1599 {}

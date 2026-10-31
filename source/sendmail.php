@@ -1,50 +1,59 @@
 <?php
-use PHPMailer/PHPMailer/PHPMailer;
-use PHPMailer/PHPMailer/Exception;
+header('Access-Control-Allow-Origin: *');
+header('Content-Type: application/json; charset=utf-8');
 
-require '/PHPMailer-6.9.1/src/Exception.php';
-require '/PHPMailer-6.9.1/src/PHPMailer.php';
+// 1. Подключаем автозагрузчик Composer
+// Мы поднимаемся на одну папку вверх из source/ в корень, где лежит vendor/
+require __DIR__ . '/vendor/autoload.php';
+
+// 2. Теперь классы доступны
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+$input = file_get_contents('php://input');
+$data = json_decode($input, true);
+
+if (!$data || empty($data['name']) || empty($data['phone'])) {
+    http_response_code(400);
+    echo json_encode(['status' => 'error', 'message' => 'Некорректные данные']);
+    exit;
+}
 
 $mail = new PHPMailer(true);
-$mail->CharSet = 'UTF-8';
-$mail->setLanguage('ru', 'phpmailer/language/');
-$mail->isHTML(true);
 
-// От кого письмо
-$mail->setFrom('sapozhnikovladimir89@gmail.com', 'Вован');
-// Кому отправить
-$mail->addAddress('sapozhnikovladimir89@gmail.com');
-// Тема письма
-$mail->Subject ='Заказ с сайта 38Specteh';
+try {
+    // --- НАСТРОЙКИ SMTP (ЗАМЕНИТЕ НА СВОИ!) ---
+    $mail->isSMTP();
+    $mail->Host       = 'smtp.yandex.ru'; 
+    $mail->SMTPAuth   = true;
+    $mail->Username   = 'sapozhnikovl@yandex.ru';
+    $mail->Password   = 'wcfqeolphygkpdvw';
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+    $mail->Port       = 465;
+    $mail->CharSet    = 'UTF-8';
 
-// Тело письма
-$body = '<h1>Заявка с сайта</h1>';
+    $mail->setFrom('sapozhnikovl@yandex.ru', 'Квиз 38СпецТех');
+    $mail->addAddress('sapozhnikovl@yandex.ru', 'Менеджер'); 
 
-if(trim(!empty($_POST['name']))){
-  $body.='<p><strong>Имя:</strong>'.$_POST['name'].'</p>';
+    $mail->isHTML(true);
+    $mail->Subject = '🔥 Новая заявка из квиза!';
+    
+    $msg = "
+        <h2>Новая заявка с сайта</h2>
+        <p><b>Имя:</b> {$data['name']}</p>
+        <p><b>Телефон:</b> {$data['phone']}</p>
+        <p><b>Техника:</b> {$data['equipment']}</p>
+        <p><b>Задача:</b> {$data['task']}</p>
+        <p><b>Сроки:</b> {$data['when']}</p>
+        <p><b>Адрес:</b> {$data['address']}</p>
+        <br>
+        <p><small>Страница: {$data['page']}</small></p>
+    ";
+
+    $mail->Body = $msg;
+    $mail->send();
+    echo json_encode(['status' => 'success']);
+} catch (Exception $e) {
+    http_response_code(500);
+    echo json_encode(['status' => 'error', 'message' => "Ошибка: {$mail->ErrorInfo}"]);
 }
-if(trim(!empty($_POST['email']))){
-  $body.='<p><strong>Имя:</strong>'.$_POST['email'].'</p>';
-}
-if(trim(!empty($_POST['phone']))){
-  $body.='<p><strong>Имя:</strong>'.$_POST['phone'].'</p>';
-}
-if(trim(!empty($_POST['message']))){
-  $body.='<p><strong>Имя:</strong>'.$_POST['message'].'</p>';
-}
-
-$mail->Body = $body;
-
-// Отправка
-
-if (!$mail->send()) {
-  $message = 'Ошибка в отправке';
-} else {
-  $message = 'Данные отправлены!';
-}
-
-$response = ['message' => $message];
-
-header('Content-type: application/json');
-echo json_encode($response);
-?>

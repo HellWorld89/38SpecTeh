@@ -1,0 +1,36 @@
+.map-widget {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+
+  .map-iframe {
+    display: block;
+    width: 100%;
+    height: 400px;        // базовое значение (по умолчанию)
+    border: 0;
+  }
+
+  // Для больших экранов (≥1600px) – увеличенная высота
+  @include vp-1600 {
+    .map-iframe {
+      height: 500px;
+    }
+  }
+
+  // Для промежуточных (768–1599px) – оставляем базовую или меняем на другую, если нужно
+  // @include vp-1599 { ... } – можно не писать, если базовая устраивает
+
+  // Для планшетов и мобильных (<768px) – уменьшаем высоту
+  @include vp-767 {
+    .map-iframe {
+      height: 300px;
+    }
+  }
+
+  // Для очень маленьких экранов (<320px) – ещё меньше
+  @include vp-319 {
+    .map-iframe {
+      height: 200px;
+    }
+  }
+}

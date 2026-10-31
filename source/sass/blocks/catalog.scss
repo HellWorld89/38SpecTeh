@@ -20,7 +20,8 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
   @include vp-767 {
-    width: $mobile-width;
+    width: 100%;
+    min-width: $mobile-width;
     margin: 0 auto;
     background-color: $base-blue-second;
     padding: 36px 0 100px;
@@ -57,6 +58,7 @@
   @include vp-767 {
     padding: 0;
     padding-left: 17px;
+    text-align: center;
   }
 
 
