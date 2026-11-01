@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function openMenu() {
-    console.log('Открываем меню');
     navMain.classList.remove('main-nav--closed');
     navMain.classList.add('main-nav--opened');
     if (scrollLock) scrollLock.classList.add('scrolllock');
@@ -30,7 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function closeMenu() {
-    console.log('Закрываем меню');
     navMain.classList.add('main-nav--closed');
     navMain.classList.remove('main-nav--opened');
     if (scrollLock) scrollLock.classList.remove('scrolllock');
@@ -43,8 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.target.closest('.main-nav__toggle')) {
       e.preventDefault();
       e.stopPropagation(); // Останавливаем выполнение других скриптов
-      
-      console.log('Клик по кнопке зафиксирован. Текущие классы:', navMain.className);
       
       if (navMain.classList.contains('main-nav--opened')) {
         closeMenu();

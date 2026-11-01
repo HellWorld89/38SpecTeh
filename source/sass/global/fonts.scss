@@ -30,6 +30,16 @@
 }
 
 @font-face {
+  font-family: "Montserrat-SemiBold";
+  src:
+    url("../../fonts/Montserrat-SemiBold.woff2") format("woff2"),
+    url("../../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "PTSans-Bold";
   src:
     url("../../fonts/PT_Sans-Web-Bold.woff2") format("woff2"),

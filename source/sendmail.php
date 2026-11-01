@@ -26,17 +26,17 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'smtp.yandex.ru'; 
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'sapozhnikovl@yandex.ru';
-    $mail->Password   = 'wcfqeolphygkpdvw';
+    $mail->Username   = 'specirkutsk@yandex.ru';
+    $mail->Password   = 'nmxjtdigbkwgphyg';
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port       = 465;
     $mail->CharSet    = 'UTF-8';
 
-    $mail->setFrom('sapozhnikovl@yandex.ru', 'Квиз 38СпецТех');
-    $mail->addAddress('sapozhnikovl@yandex.ru', 'Менеджер'); 
+    $mail->setFrom('specirkutsk@yandex.ru', 'Заявка 38СпецТех');
+    $mail->addAddress('specirkutsk@yandex.ru', 'Менеджер'); 
 
     $mail->isHTML(true);
-    $mail->Subject = '🔥 Новая заявка из квиза!';
+    $mail->Subject = '🔥 Новая заявка с сайта!';
     
     $msg = "
         <h2>Новая заявка с сайта</h2>

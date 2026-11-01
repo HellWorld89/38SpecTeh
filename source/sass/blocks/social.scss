@@ -98,3 +98,14 @@
 //   box-shadow: 0 0 5px $base-orange;
 //   text-shadow: 0 0 5px $base-orange;
 // }
+.social__icon {
+  width: 20px; /* или 24px */
+  height: 20px;
+  fill: currentColor; /* Иконка будет принимать цвет текста ссылки */
+  transition: fill 0.3s ease;
+}
+
+/* Например, если при наведении текст становится красным, иконка тоже станет красной */
+.social__button:hover .social__icon {
+  fill: #d43f3f; /* Ваш цвет ховера */
+}
